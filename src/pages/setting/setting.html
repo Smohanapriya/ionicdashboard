@@ -1,0 +1,26 @@
+<!--
+  Generated template for the Setting page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+	<ion-navbar color="hometab">
+		<ion-title>Settings</ion-title>
+	</ion-navbar>
+
+</ion-header>
+<ion-content padding-5 class="home home-background">
+	<form #settingsForm='ngForm' (ngSubmit)="onSubmit()">
+		<ion-item color="hometab">
+			<ion-label floating>IP</ion-label>
+			<ion-input type="text" [(ngModel)]="ip" name="ip"></ion-input>
+		</ion-item>
+		<ion-item color="hometab">
+			<ion-label floating>PORT</ion-label>
+			<ion-input type="text" [(ngModel)]="port" name="port"></ion-input>
+		</ion-item>
+		<button ion-button full>Save Configuration</button>
+	</form>
+</ion-content>
