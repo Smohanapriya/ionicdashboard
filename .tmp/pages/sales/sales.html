@@ -1,0 +1,44 @@
+<!--
+  Generated template for the Sales page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+  <ion-navbar color="hometab">
+    <ion-title>Sales</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home-background">
+<ion-card  *ngFor="let sale of saleData" class="card-round">
+  <ion-card-header class="card-tab-bg-{{sale.color}} font-bold">
+    <div>{{sale.section}}</div>
+  </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col width-50>
+            <h2>Actual Sales</h2>
+            <span><ion-icon name="pie" class="card-titler"> {{sale.actsales}}</ion-icon></span>
+          </ion-col>
+          <ion-col width-50>
+            <h2>Discount Amount</h2>
+            <span><ion-icon name="podium" class="card-titler"> {{sale.discamt}}</ion-icon></span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col width-50>
+            <h2>Sales Amount</h2>
+            <span><ion-icon name="stats" class="card-titler"> {{sale.salesamt}}</ion-icon></span>
+          </ion-col>
+          <ion-col width-50>
+            <h2>Profit</h2>
+            <span><ion-icon name="ribbon" class="card-titler"> {{sale.profit}}%</ion-icon></span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+</ion-card>
+</ion-content>
+  
