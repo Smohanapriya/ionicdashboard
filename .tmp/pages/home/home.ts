@@ -10,7 +10,7 @@ import { ConnectionService } from '../../providers/connection-service';
 @Component({
     selector: 'page-home',
     templateUrl: 'home.html',
-    providers:[]
+    providers: []
 })
 export class HomePage {
 
@@ -18,13 +18,15 @@ export class HomePage {
     constructor(public navCtrl: NavController, platform: Platform, service: ConnectionService, private alertCtrl: AlertController) {
         this.navCtrl = navCtrl;
         platform.ready().then(() => service.getConnectionInfo())
-            .then(data => {
+            .then(
+            data => {
                 if (service.error == true) {
                     this.navCtrl.push(SettingPage, {
                         mode: 0
                     });
                 }
-            });
+            }
+            );
     }
 
 

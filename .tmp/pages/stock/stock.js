@@ -41,7 +41,7 @@ export var StockPage = (function () {
         { type: Component, args: [{
                     selector: 'page-stock',
                     templateUrl: 'stock.html',
-                    providers: [StocksService],
+                    providers: [],
                 },] },
     ];
     /** @nocollapse */

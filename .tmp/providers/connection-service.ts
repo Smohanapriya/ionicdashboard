@@ -1,19 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { Platform, NavController } from 'ionic-angular';
+import { Platform } from 'ionic-angular';
 import { NativeStorage } from 'ionic-native';
 import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ConnectionService {
-    private navCtrl: NavController;
     private platform: Platform;
     public ip: string;
     public port: string;
     public error:boolean;
-    public constructor(platform: Platform, navCtrl: NavController) {
+    public constructor(platform: Platform) {
         this.platform = platform;
-        this.navCtrl = navCtrl;
     }
     public getConnectionInfo() {
         return this.platform.ready().then(() => NativeStorage.getItem('connectionStorage'))

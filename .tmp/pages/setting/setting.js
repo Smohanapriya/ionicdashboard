@@ -31,7 +31,7 @@ export var SettingPage = (function () {
         { type: Component, args: [{
                     selector: 'page-setting',
                     templateUrl: 'setting.html',
-                    providers: [ConnectionService]
+                    providers: []
                 },] },
     ];
     /** @nocollapse */

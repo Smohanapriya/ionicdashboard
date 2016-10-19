@@ -10,12 +10,12 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 import * as import1 from '@angular/core/src/linker/view';
 import * as import2 from '@angular/core/src/linker/element';
-import * as import3 from '../../providers/allsales-service';
-import * as import4 from './sales';
-import * as import5 from '@angular/core/src/linker/view_utils';
-import * as import7 from '@angular/core/src/linker/view_type';
-import * as import8 from '@angular/core/src/change_detection/change_detection';
-import * as import9 from '@angular/http/src/http';
+import * as import3 from './sales';
+import * as import4 from '@angular/core/src/linker/view_utils';
+import * as import6 from '@angular/core/src/linker/view_type';
+import * as import7 from '@angular/core/src/change_detection/change_detection';
+import * as import8 from 'ionic-angular/components/alert/alert';
+import * as import9 from '../../providers/allsales-service';
 import * as import10 from 'ionic-angular/components/loading/loading';
 import * as import11 from 'ionic-angular/navigation/nav-controller';
 import * as import12 from 'ionic-angular/navigation/nav-params';
@@ -45,25 +45,21 @@ var renderType_SalesPage_Host = null;
 var _View_SalesPage_Host0 = (function (_super) {
     __extends(_View_SalesPage_Host0, _super);
     function _View_SalesPage_Host0(viewUtils, parentInjector, declarationEl) {
-        _super.call(this, _View_SalesPage_Host0, renderType_SalesPage_Host, import7.ViewType.HOST, viewUtils, parentInjector, declarationEl, import8.ChangeDetectorStatus.CheckAlways);
+        _super.call(this, _View_SalesPage_Host0, renderType_SalesPage_Host, import6.ViewType.HOST, viewUtils, parentInjector, declarationEl, import7.ChangeDetectorStatus.CheckAlways);
     }
     _View_SalesPage_Host0.prototype.createInternal = function (rootSelector) {
         this._el_0 = this.selectOrCreateHostElement('page-sales', rootSelector, null);
         this._appEl_0 = new import2.AppElement(0, null, this, this._el_0);
         var compView_0 = viewFactory_SalesPage0(this.viewUtils, this.injector(0), this._appEl_0);
-        this._AllSalesService_0_4 = new import3.AllSalesService(this.parentInjector.get(import9.Http));
-        this._SalesPage_0_5 = new import4.SalesPage(this._AllSalesService_0_4, this.parentInjector.get(import10.LoadingController), this.parentInjector.get(import11.NavController), this.parentInjector.get(import12.NavParams));
-        this._appEl_0.initComponent(this._SalesPage_0_5, [], compView_0);
-        compView_0.create(this._SalesPage_0_5, this.projectableNodes, null);
+        this._SalesPage_0_4 = new import3.SalesPage(this.parentInjector.get(import8.AlertController), this.parentInjector.get(import9.AllSalesService), this.parentInjector.get(import10.LoadingController), this.parentInjector.get(import11.NavController), this.parentInjector.get(import12.NavParams));
+        this._appEl_0.initComponent(this._SalesPage_0_4, [], compView_0);
+        compView_0.create(this._SalesPage_0_4, this.projectableNodes, null);
         this.init([].concat([this._el_0]), [this._el_0], [], []);
         return this._appEl_0;
     };
     _View_SalesPage_Host0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import3.AllSalesService) && (0 === requestNodeIndex))) {
-            return this._AllSalesService_0_4;
-        }
-        if (((token === import4.SalesPage) && (0 === requestNodeIndex))) {
-            return this._SalesPage_0_5;
+        if (((token === import3.SalesPage) && (0 === requestNodeIndex))) {
+            return this._SalesPage_0_4;
         }
         return notFoundResult;
     };
@@ -75,13 +71,13 @@ function viewFactory_SalesPage_Host0(viewUtils, parentInjector, declarationEl) {
     }
     return new _View_SalesPage_Host0(viewUtils, parentInjector, declarationEl);
 }
-export var SalesPageNgFactory = new import14.ComponentFactory('page-sales', viewFactory_SalesPage_Host0, import4.SalesPage);
+export var SalesPageNgFactory = new import14.ComponentFactory('page-sales', viewFactory_SalesPage_Host0, import3.SalesPage);
 var styles_SalesPage = [];
 var renderType_SalesPage = null;
 var _View_SalesPage0 = (function (_super) {
     __extends(_View_SalesPage0, _super);
     function _View_SalesPage0(viewUtils, parentInjector, declarationEl) {
-        _super.call(this, _View_SalesPage0, renderType_SalesPage, import7.ViewType.COMPONENT, viewUtils, parentInjector, declarationEl, import8.ChangeDetectorStatus.CheckAlways);
+        _super.call(this, _View_SalesPage0, renderType_SalesPage, import6.ViewType.COMPONENT, viewUtils, parentInjector, declarationEl, import7.ChangeDetectorStatus.CheckAlways);
     }
     _View_SalesPage0.prototype.createInternal = function (rootSelector) {
         var parentRenderNode = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
@@ -140,11 +136,11 @@ var _View_SalesPage0 = (function (_super) {
             []
         ], null);
         this._text_14 = this.renderer.createText(parentRenderNode, '\n  \n', null);
-        this._expr_0 = import8.UNINITIALIZED;
-        this._expr_1 = import8.UNINITIALIZED;
-        this._expr_2 = import8.UNINITIALIZED;
-        this._expr_3 = import8.UNINITIALIZED;
-        this._expr_4 = import8.UNINITIALIZED;
+        this._expr_0 = import7.UNINITIALIZED;
+        this._expr_1 = import7.UNINITIALIZED;
+        this._expr_2 = import7.UNINITIALIZED;
+        this._expr_3 = import7.UNINITIALIZED;
+        this._expr_4 = import7.UNINITIALIZED;
         this.init([], [
             this._text_0,
             this._el_1,
@@ -188,7 +184,7 @@ var _View_SalesPage0 = (function (_super) {
     _View_SalesPage0.prototype.detectChangesInternal = function (throwOnChange) {
         var changes = null;
         var currVal_0 = 'hometab';
-        if (import5.checkBinding(throwOnChange, this._expr_0, currVal_0)) {
+        if (import4.checkBinding(throwOnChange, this._expr_0, currVal_0)) {
             this._Navbar_3_4.color = currVal_0;
             this._expr_0 = currVal_0;
         }
@@ -197,12 +193,12 @@ var _View_SalesPage0 = (function (_super) {
         }
         changes = null;
         var currVal_4 = this.context.saleData;
-        if (import5.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
+        if (import4.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
             this._NgFor_12_6.ngForOf = currVal_4;
             if ((changes === null)) {
                 (changes = {});
             }
-            changes['ngForOf'] = new import8.SimpleChange(this._expr_4, currVal_4);
+            changes['ngForOf'] = new import7.SimpleChange(this._expr_4, currVal_4);
             this._expr_4 = currVal_4;
         }
         if ((changes !== null)) {
@@ -213,17 +209,17 @@ var _View_SalesPage0 = (function (_super) {
         }
         this.detectContentChildrenChanges(throwOnChange);
         var currVal_1 = this._Navbar_3_4._hidden;
-        if (import5.checkBinding(throwOnChange, this._expr_1, currVal_1)) {
+        if (import4.checkBinding(throwOnChange, this._expr_1, currVal_1)) {
             this.renderer.setElementProperty(this._el_3, 'hidden', currVal_1);
             this._expr_1 = currVal_1;
         }
         var currVal_2 = this._Navbar_3_4._sbPadding;
-        if (import5.checkBinding(throwOnChange, this._expr_2, currVal_2)) {
+        if (import4.checkBinding(throwOnChange, this._expr_2, currVal_2)) {
             this.renderer.setElementClass(this._el_3, 'statusbar-padding', currVal_2);
             this._expr_2 = currVal_2;
         }
         var currVal_3 = this._Content_10_4._sbPadding;
-        if (import5.checkBinding(throwOnChange, this._expr_3, currVal_3)) {
+        if (import4.checkBinding(throwOnChange, this._expr_3, currVal_3)) {
             this.renderer.setElementClass(this._el_10, 'statusbar-padding', currVal_3);
             this._expr_3 = currVal_3;
         }
@@ -248,7 +244,7 @@ export function viewFactory_SalesPage0(viewUtils, parentInjector, declarationEl)
 var _View_SalesPage1 = (function (_super) {
     __extends(_View_SalesPage1, _super);
     function _View_SalesPage1(viewUtils, parentInjector, declarationEl) {
-        _super.call(this, _View_SalesPage1, renderType_SalesPage, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import8.ChangeDetectorStatus.CheckAlways);
+        _super.call(this, _View_SalesPage1, renderType_SalesPage, import6.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import7.ChangeDetectorStatus.CheckAlways);
     }
     _View_SalesPage1.prototype.createInternal = function (rootSelector) {
         this._el_0 = this.renderer.createElement(null, 'ion-card', null);
@@ -342,20 +338,20 @@ var _View_SalesPage1 = (function (_super) {
         this._text_57 = this.renderer.createText(this._el_10, '\n      ', null);
         this._text_58 = this.renderer.createText(this._el_8, '\n    ', null);
         this._text_59 = this.renderer.createText(this._el_0, '\n', null);
-        this._expr_0 = import8.UNINITIALIZED;
-        this._expr_1 = import8.UNINITIALIZED;
-        this._expr_2 = import8.UNINITIALIZED;
-        this._expr_3 = import8.UNINITIALIZED;
-        this._expr_4 = import8.UNINITIALIZED;
-        this._expr_5 = import8.UNINITIALIZED;
-        this._expr_6 = import8.UNINITIALIZED;
-        this._expr_7 = import8.UNINITIALIZED;
-        this._expr_8 = import8.UNINITIALIZED;
-        this._expr_9 = import8.UNINITIALIZED;
-        this._expr_10 = import8.UNINITIALIZED;
-        this._expr_11 = import8.UNINITIALIZED;
-        this._expr_12 = import8.UNINITIALIZED;
-        this._expr_13 = import8.UNINITIALIZED;
+        this._expr_0 = import7.UNINITIALIZED;
+        this._expr_1 = import7.UNINITIALIZED;
+        this._expr_2 = import7.UNINITIALIZED;
+        this._expr_3 = import7.UNINITIALIZED;
+        this._expr_4 = import7.UNINITIALIZED;
+        this._expr_5 = import7.UNINITIALIZED;
+        this._expr_6 = import7.UNINITIALIZED;
+        this._expr_7 = import7.UNINITIALIZED;
+        this._expr_8 = import7.UNINITIALIZED;
+        this._expr_9 = import7.UNINITIALIZED;
+        this._expr_10 = import7.UNINITIALIZED;
+        this._expr_11 = import7.UNINITIALIZED;
+        this._expr_12 = import7.UNINITIALIZED;
+        this._expr_13 = import7.UNINITIALIZED;
         this.init([].concat([this._el_0]), [
             this._el_0,
             this._text_1,
@@ -467,73 +463,73 @@ var _View_SalesPage1 = (function (_super) {
     };
     _View_SalesPage1.prototype.detectChangesInternal = function (throwOnChange) {
         var currVal_2 = 'pie';
-        if (import5.checkBinding(throwOnChange, this._expr_2, currVal_2)) {
+        if (import4.checkBinding(throwOnChange, this._expr_2, currVal_2)) {
             this._Icon_20_3.name = currVal_2;
             this._expr_2 = currVal_2;
         }
         var currVal_5 = 'podium';
-        if (import5.checkBinding(throwOnChange, this._expr_5, currVal_5)) {
+        if (import4.checkBinding(throwOnChange, this._expr_5, currVal_5)) {
             this._Icon_30_3.name = currVal_5;
             this._expr_5 = currVal_5;
         }
         var currVal_8 = 'stats';
-        if (import5.checkBinding(throwOnChange, this._expr_8, currVal_8)) {
+        if (import4.checkBinding(throwOnChange, this._expr_8, currVal_8)) {
             this._Icon_43_3.name = currVal_8;
             this._expr_8 = currVal_8;
         }
         var currVal_11 = 'ribbon';
-        if (import5.checkBinding(throwOnChange, this._expr_11, currVal_11)) {
+        if (import4.checkBinding(throwOnChange, this._expr_11, currVal_11)) {
             this._Icon_53_3.name = currVal_11;
             this._expr_11 = currVal_11;
         }
         this.detectContentChildrenChanges(throwOnChange);
-        var currVal_0 = import5.interpolate(1, 'card-tab-bg-', this.context.$implicit.color, ' font-bold');
-        if (import5.checkBinding(throwOnChange, this._expr_0, currVal_0)) {
+        var currVal_0 = import4.interpolate(1, 'card-tab-bg-', this.context.$implicit.color, ' font-bold');
+        if (import4.checkBinding(throwOnChange, this._expr_0, currVal_0)) {
             this.renderer.setElementProperty(this._el_2, 'className', currVal_0);
             this._expr_0 = currVal_0;
         }
-        var currVal_1 = import5.interpolate(1, '', this.context.$implicit.section, '');
-        if (import5.checkBinding(throwOnChange, this._expr_1, currVal_1)) {
+        var currVal_1 = import4.interpolate(1, '', this.context.$implicit.section, '');
+        if (import4.checkBinding(throwOnChange, this._expr_1, currVal_1)) {
             this.renderer.setText(this._text_5, currVal_1);
             this._expr_1 = currVal_1;
         }
         var currVal_3 = this._Icon_20_3._hidden;
-        if (import5.checkBinding(throwOnChange, this._expr_3, currVal_3)) {
+        if (import4.checkBinding(throwOnChange, this._expr_3, currVal_3)) {
             this.renderer.setElementClass(this._el_20, 'hide', currVal_3);
             this._expr_3 = currVal_3;
         }
-        var currVal_4 = import5.interpolate(1, ' ', this.context.$implicit.actsales, '');
-        if (import5.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
+        var currVal_4 = import4.interpolate(1, ' ', this.context.$implicit.actsales, '');
+        if (import4.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
             this.renderer.setText(this._text_21, currVal_4);
             this._expr_4 = currVal_4;
         }
         var currVal_6 = this._Icon_30_3._hidden;
-        if (import5.checkBinding(throwOnChange, this._expr_6, currVal_6)) {
+        if (import4.checkBinding(throwOnChange, this._expr_6, currVal_6)) {
             this.renderer.setElementClass(this._el_30, 'hide', currVal_6);
             this._expr_6 = currVal_6;
         }
-        var currVal_7 = import5.interpolate(1, ' ', this.context.$implicit.discamt, '');
-        if (import5.checkBinding(throwOnChange, this._expr_7, currVal_7)) {
+        var currVal_7 = import4.interpolate(1, ' ', this.context.$implicit.discamt, '');
+        if (import4.checkBinding(throwOnChange, this._expr_7, currVal_7)) {
             this.renderer.setText(this._text_31, currVal_7);
             this._expr_7 = currVal_7;
         }
         var currVal_9 = this._Icon_43_3._hidden;
-        if (import5.checkBinding(throwOnChange, this._expr_9, currVal_9)) {
+        if (import4.checkBinding(throwOnChange, this._expr_9, currVal_9)) {
             this.renderer.setElementClass(this._el_43, 'hide', currVal_9);
             this._expr_9 = currVal_9;
         }
-        var currVal_10 = import5.interpolate(1, ' ', this.context.$implicit.salesamt, '');
-        if (import5.checkBinding(throwOnChange, this._expr_10, currVal_10)) {
+        var currVal_10 = import4.interpolate(1, ' ', this.context.$implicit.salesamt, '');
+        if (import4.checkBinding(throwOnChange, this._expr_10, currVal_10)) {
             this.renderer.setText(this._text_44, currVal_10);
             this._expr_10 = currVal_10;
         }
         var currVal_12 = this._Icon_53_3._hidden;
-        if (import5.checkBinding(throwOnChange, this._expr_12, currVal_12)) {
+        if (import4.checkBinding(throwOnChange, this._expr_12, currVal_12)) {
             this.renderer.setElementClass(this._el_53, 'hide', currVal_12);
             this._expr_12 = currVal_12;
         }
-        var currVal_13 = import5.interpolate(1, ' ', this.context.$implicit.profit, '%');
-        if (import5.checkBinding(throwOnChange, this._expr_13, currVal_13)) {
+        var currVal_13 = import4.interpolate(1, ' ', this.context.$implicit.profit, '%');
+        if (import4.checkBinding(throwOnChange, this._expr_13, currVal_13)) {
             this.renderer.setText(this._text_54, currVal_13);
             this._expr_13 = currVal_13;
         }

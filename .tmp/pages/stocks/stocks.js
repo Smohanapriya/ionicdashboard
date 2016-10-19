@@ -36,7 +36,7 @@ export var StocksPage = (function () {
         { type: Component, args: [{
                     selector: 'page-stocks',
                     templateUrl: 'stocks.html',
-                    providers: [AllStocksService]
+                    providers: []
                 },] },
     ];
     /** @nocollapse */

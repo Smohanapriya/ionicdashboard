@@ -12,7 +12,7 @@ import { StocksPage } from '../stocks/stocks';
 @Component({
   selector: 'page-stock',
   templateUrl: 'stock.html',
-  providers: [StocksService],
+  providers: [],
 })
 export class StockPage {
 public companyData:Company[]=[];

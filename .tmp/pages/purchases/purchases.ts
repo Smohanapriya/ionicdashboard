@@ -11,7 +11,7 @@ import {AllPurchaseService} from '../../providers/allpurchase-service';
 @Component({
   selector: 'page-purchases',
   templateUrl: 'purchases.html',
-  providers: [AllPurchaseService]
+  providers: []
 })
 export class PurchasesPage {
 

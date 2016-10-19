@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class SalesService {
   connection:ConnectionService;
-  constructor(public http: Http, @Inject(ConnectionService) connection:ConnectionService) {
+  constructor(public http: Http, connection:ConnectionService) {
     this.connection = connection;
     this.http = http;
     this.connection.getConnectionInfo();

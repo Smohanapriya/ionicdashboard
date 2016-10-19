@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { Platform } from 'ionic-angular';
+import { ConnectionService } from './connection-service';
 import 'rxjs/add/operator/map';
 /*
   Generated class for the AllpurchaseService provider.
@@ -9,12 +9,14 @@ import 'rxjs/add/operator/map';
   for more info on providers and Angular 2 DI.
 */
 export var AllPurchaseService = (function () {
-    function AllPurchaseService(http, platform) {
+    function AllPurchaseService(http, connection) {
         this.http = http;
         this.http = http;
+        this.connection = connection;
+        this.connection.getConnectionInfo();
     }
     AllPurchaseService.prototype.getAllPurchaseData = function (code) {
-        return this.http.get("http://192.168.1.8:8080/DasherAPI/public/api2/getCompanyPurchaseSegmented?company=" + code);
+        return this.http.get("http://" + this.connection.ip + ":" + this.connection.port + "/DasherAPI/public/api2/getCompanyPurchaseSegmented?company=" + code);
     };
     AllPurchaseService.decorators = [
         { type: Injectable },
@@ -22,7 +24,7 @@ export var AllPurchaseService = (function () {
     /** @nocollapse */
     AllPurchaseService.ctorParameters = [
         { type: Http, },
-        { type: Platform, },
+        { type: ConnectionService, },
     ];
     return AllPurchaseService;
 }());

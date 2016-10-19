@@ -1,10 +1,11 @@
 import { Http } from '@angular/http';
-import { Platform } from 'ionic-angular';
+import { ConnectionService } from './connection-service';
 import 'rxjs/add/operator/map';
 export declare class AllPurchaseService {
     http: Http;
     ip: string;
     port: string;
-    constructor(http: Http, platform: Platform);
+    connection: ConnectionService;
+    constructor(http: Http, connection: ConnectionService);
     getAllPurchaseData(code: any): any;
 }

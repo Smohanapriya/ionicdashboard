@@ -42,7 +42,7 @@ export var PurchasePage = (function () {
         { type: Component, args: [{
                     selector: 'page-purchase',
                     templateUrl: 'purchase.html',
-                    providers: [PurchaseService]
+                    providers: []
                 },] },
     ];
     /** @nocollapse */

@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Platform, NavController } from 'ionic-angular';
+import { Platform } from 'ionic-angular';
 import { NativeStorage } from 'ionic-native';
 import 'rxjs/add/operator/map';
 export var ConnectionService = (function () {
-    function ConnectionService(platform, navCtrl) {
+    function ConnectionService(platform) {
         this.platform = platform;
-        this.navCtrl = navCtrl;
     }
     ConnectionService.prototype.getConnectionInfo = function () {
         var _this = this;
@@ -30,7 +29,6 @@ export var ConnectionService = (function () {
     /** @nocollapse */
     ConnectionService.ctorParameters = [
         { type: Platform, },
-        { type: NavController, },
     ];
     return ConnectionService;
 }());

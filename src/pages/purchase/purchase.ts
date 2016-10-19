@@ -12,7 +12,7 @@ import { PurchasesPage } from '../purchases/purchases';
 @Component({
   selector: 'page-purchase',
   templateUrl: 'purchase.html',
-  providers: [PurchaseService]
+  providers: []
 })
 export class PurchasePage {
 public companyData:Company[]=[];

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { ConnectionService } from './connection-service';
 import 'rxjs/add/operator/map';
 
 /*
@@ -11,11 +12,14 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class AllStocksService {
 
-  constructor(public http: Http) {
+connection:ConnectionService;
+  constructor(public http: Http,connection:ConnectionService) {
     this.http = http;
+    this.connection = connection;
+    this.connection.getConnectionInfo();
   }
 
   getAllStocksData(code:any):any {
-    return this.http.get("http://192.168.1.8:8080/DasherAPI/public/api2/getCompanyStocksSegmented?company="+code);
+    return this.http.get("http://"+this.connection.ip+":"+this.connection.port+"/DasherAPI/public/api2/getCompanyStocksSegmented?company="+code);
   }
 }

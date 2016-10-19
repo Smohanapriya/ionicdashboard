@@ -1,4 +1,4 @@
-import { NavController, NavParams, LoadingController } from 'ionic-angular';
+import { NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { AllSalesService } from '../../providers/allsales-service';
 export declare class SalesPage {
     service: AllSalesService;
@@ -7,8 +7,10 @@ export declare class SalesPage {
     private navParams;
     saleData: SaleVar[];
     code: any;
-    constructor(service: AllSalesService, loadingCtrl: LoadingController, navCtrl: NavController, navParams: NavParams);
+    alertCtrl: AlertController;
+    constructor(alertCtrl: AlertController, service: AllSalesService, loadingCtrl: LoadingController, navCtrl: NavController, navParams: NavParams);
     presentLoading(): void;
+    presentAlert(id: any): void;
     ionViewDidLoad(): void;
 }
 export declare class SaleVar {

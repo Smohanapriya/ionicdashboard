@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { ConnectionService } from './connection-service';
 import 'rxjs/add/operator/map';
 /*
   Generated class for the StocksService provider.
@@ -8,12 +9,14 @@ import 'rxjs/add/operator/map';
   for more info on providers and Angular 2 DI.
 */
 export var StocksService = (function () {
-    function StocksService(http) {
+    function StocksService(http, connection) {
         this.http = http;
         this.http = http;
+        this.connection = connection;
+        this.connection.getConnectionInfo();
     }
     StocksService.prototype.getStocksData = function () {
-        return this.http.get("http://192.168.1.8:8080/DasherAPI/public/api2/getCompanyStocksFull");
+        return this.http.get("http://" + this.connection.ip + ":" + this.connection.port + "/DasherAPI/public/api2/getCompanyStocksFull");
     };
     StocksService.decorators = [
         { type: Injectable },
@@ -21,6 +24,7 @@ export var StocksService = (function () {
     /** @nocollapse */
     StocksService.ctorParameters = [
         { type: Http, },
+        { type: ConnectionService, },
     ];
     return StocksService;
 }());

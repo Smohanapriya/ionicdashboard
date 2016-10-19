@@ -11,7 +11,7 @@ import { ConnectionService } from '../../providers/connection-service';
 @Component({
   selector: 'page-setting',
   templateUrl: 'setting.html',
-  providers: [ConnectionService]
+  providers: []
 })
 
 

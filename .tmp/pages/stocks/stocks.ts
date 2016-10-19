@@ -11,7 +11,7 @@ import {AllStocksService} from '../../providers/allstocks-service';
 @Component({
   selector: 'page-stocks',
   templateUrl: 'stocks.html',
-  providers: [AllStocksService]
+  providers: []
 })
 export class StocksPage {
 public stockData:StockVar[]=[];

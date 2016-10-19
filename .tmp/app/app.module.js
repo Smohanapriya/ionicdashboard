@@ -12,6 +12,12 @@ import { StockPage } from '../pages/stock/stock';
 import { StocksPage } from '../pages/stocks/stocks';
 import { ConnectionService } from '../providers/connection-service';
 import { SalesService } from '../providers/sales-service';
+import { AllPurchaseService } from '../providers/allpurchase-service';
+import { AllSalesService } from '../providers/allsales-service';
+import { AllStocksService } from '../providers/allstocks-service';
+import { PurchaseService } from '../providers/purchase-service';
+import { StaffService } from '../providers/staff-service';
+import { StocksService } from '../providers/stocks-service';
 export var AppModule = (function () {
     function AppModule() {
     }
@@ -45,7 +51,8 @@ export var AppModule = (function () {
                         StockPage,
                         StocksPage
                     ],
-                    providers: [ConnectionService, SalesService]
+                    providers: [ConnectionService, SalesService, AllPurchaseService, AllSalesService,
+                        AllStocksService, PurchaseService, StaffService, StocksService]
                 },] },
     ];
     /** @nocollapse */

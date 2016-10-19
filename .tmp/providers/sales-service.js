@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { ConnectionService } from './connection-service';
 import 'rxjs/add/operator/map';
@@ -18,7 +18,7 @@ export var SalesService = (function () {
     /** @nocollapse */
     SalesService.ctorParameters = [
         { type: Http, },
-        { type: ConnectionService, decorators: [{ type: Inject, args: [ConnectionService,] },] },
+        { type: ConnectionService, },
     ];
     return SalesService;
 }());

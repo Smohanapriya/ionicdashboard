@@ -10,61 +10,55 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 import * as import1 from '@angular/core/src/linker/view';
 import * as import2 from '@angular/core/src/linker/element';
-import * as import3 from '../../providers/allpurchase-service';
-import * as import4 from './purchases';
-import * as import5 from '@angular/core/src/linker/view_utils';
-import * as import7 from '@angular/core/src/linker/view_type';
-import * as import8 from '@angular/core/src/change_detection/change_detection';
-import * as import9 from '@angular/http/src/http';
-import * as import10 from 'ionic-angular/platform/platform';
-import * as import11 from 'ionic-angular/components/loading/loading';
-import * as import12 from 'ionic-angular/navigation/nav-controller';
-import * as import13 from 'ionic-angular/navigation/nav-params';
-import * as import14 from '@angular/core/src/metadata/view';
-import * as import15 from '@angular/core/src/linker/component_factory';
-import * as import16 from 'ionic-angular/components/toolbar/toolbar';
-import * as import17 from 'ionic-angular/components/navbar/navbar';
-import * as import18 from 'ionic-angular/components/toolbar/toolbar-title';
-import * as import19 from 'ionic-angular/components/content/content';
-import * as import20 from '@angular/common/src/directives/ng_for';
-import * as import21 from 'ionic-angular/config/config';
-import * as import22 from '@angular/core/src/linker/element_ref';
-import * as import23 from 'ionic-angular/navigation/view-controller';
-import * as import24 from '../../node_modules/ionic-angular/components/navbar/navbar.ngfactory';
-import * as import25 from 'ionic-angular/components/app/app';
-import * as import26 from '../../node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory';
-import * as import27 from '../../node_modules/ionic-angular/components/content/content.ngfactory';
-import * as import28 from 'ionic-angular/util/keyboard';
-import * as import29 from '@angular/core/src/zone/ng_zone';
-import * as import30 from 'ionic-angular/components/tabs/tabs';
-import * as import31 from '@angular/core/src/linker/template_ref';
-import * as import32 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import33 from 'ionic-angular/components/card/card';
-import * as import34 from 'ionic-angular/components/grid/grid';
-import * as import35 from 'ionic-angular/components/icon/icon';
+import * as import3 from './purchases';
+import * as import4 from '@angular/core/src/linker/view_utils';
+import * as import6 from '@angular/core/src/linker/view_type';
+import * as import7 from '@angular/core/src/change_detection/change_detection';
+import * as import8 from '../../providers/allpurchase-service';
+import * as import9 from 'ionic-angular/components/loading/loading';
+import * as import10 from 'ionic-angular/navigation/nav-controller';
+import * as import11 from 'ionic-angular/navigation/nav-params';
+import * as import12 from '@angular/core/src/metadata/view';
+import * as import13 from '@angular/core/src/linker/component_factory';
+import * as import14 from 'ionic-angular/components/toolbar/toolbar';
+import * as import15 from 'ionic-angular/components/navbar/navbar';
+import * as import16 from 'ionic-angular/components/toolbar/toolbar-title';
+import * as import17 from 'ionic-angular/components/content/content';
+import * as import18 from '@angular/common/src/directives/ng_for';
+import * as import19 from 'ionic-angular/config/config';
+import * as import20 from '@angular/core/src/linker/element_ref';
+import * as import21 from 'ionic-angular/navigation/view-controller';
+import * as import22 from '../../node_modules/ionic-angular/components/navbar/navbar.ngfactory';
+import * as import23 from 'ionic-angular/components/app/app';
+import * as import24 from '../../node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory';
+import * as import25 from '../../node_modules/ionic-angular/components/content/content.ngfactory';
+import * as import26 from 'ionic-angular/util/keyboard';
+import * as import27 from '@angular/core/src/zone/ng_zone';
+import * as import28 from 'ionic-angular/components/tabs/tabs';
+import * as import29 from '@angular/core/src/linker/template_ref';
+import * as import30 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import31 from 'ionic-angular/components/card/card';
+import * as import32 from 'ionic-angular/components/grid/grid';
+import * as import33 from 'ionic-angular/components/icon/icon';
 var renderType_PurchasesPage_Host = null;
 var _View_PurchasesPage_Host0 = (function (_super) {
     __extends(_View_PurchasesPage_Host0, _super);
     function _View_PurchasesPage_Host0(viewUtils, parentInjector, declarationEl) {
-        _super.call(this, _View_PurchasesPage_Host0, renderType_PurchasesPage_Host, import7.ViewType.HOST, viewUtils, parentInjector, declarationEl, import8.ChangeDetectorStatus.CheckAlways);
+        _super.call(this, _View_PurchasesPage_Host0, renderType_PurchasesPage_Host, import6.ViewType.HOST, viewUtils, parentInjector, declarationEl, import7.ChangeDetectorStatus.CheckAlways);
     }
     _View_PurchasesPage_Host0.prototype.createInternal = function (rootSelector) {
         this._el_0 = this.selectOrCreateHostElement('page-purchases', rootSelector, null);
         this._appEl_0 = new import2.AppElement(0, null, this, this._el_0);
         var compView_0 = viewFactory_PurchasesPage0(this.viewUtils, this.injector(0), this._appEl_0);
-        this._AllPurchaseService_0_4 = new import3.AllPurchaseService(this.parentInjector.get(import9.Http), this.parentInjector.get(import10.Platform));
-        this._PurchasesPage_0_5 = new import4.PurchasesPage(this._AllPurchaseService_0_4, this.parentInjector.get(import11.LoadingController), this.parentInjector.get(import12.NavController), this.parentInjector.get(import13.NavParams));
-        this._appEl_0.initComponent(this._PurchasesPage_0_5, [], compView_0);
-        compView_0.create(this._PurchasesPage_0_5, this.projectableNodes, null);
+        this._PurchasesPage_0_4 = new import3.PurchasesPage(this.parentInjector.get(import8.AllPurchaseService), this.parentInjector.get(import9.LoadingController), this.parentInjector.get(import10.NavController), this.parentInjector.get(import11.NavParams));
+        this._appEl_0.initComponent(this._PurchasesPage_0_4, [], compView_0);
+        compView_0.create(this._PurchasesPage_0_4, this.projectableNodes, null);
         this.init([].concat([this._el_0]), [this._el_0], [], []);
         return this._appEl_0;
     };
     _View_PurchasesPage_Host0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import3.AllPurchaseService) && (0 === requestNodeIndex))) {
-            return this._AllPurchaseService_0_4;
-        }
-        if (((token === import4.PurchasesPage) && (0 === requestNodeIndex))) {
-            return this._PurchasesPage_0_5;
+        if (((token === import3.PurchasesPage) && (0 === requestNodeIndex))) {
+            return this._PurchasesPage_0_4;
         }
         return notFoundResult;
     };
@@ -72,36 +66,36 @@ var _View_PurchasesPage_Host0 = (function (_super) {
 }(import1.AppView));
 function viewFactory_PurchasesPage_Host0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_PurchasesPage_Host === null)) {
-        (renderType_PurchasesPage_Host = viewUtils.createRenderComponentType('', 0, import14.ViewEncapsulation.None, [], {}));
+        (renderType_PurchasesPage_Host = viewUtils.createRenderComponentType('', 0, import12.ViewEncapsulation.None, [], {}));
     }
     return new _View_PurchasesPage_Host0(viewUtils, parentInjector, declarationEl);
 }
-export var PurchasesPageNgFactory = new import15.ComponentFactory('page-purchases', viewFactory_PurchasesPage_Host0, import4.PurchasesPage);
+export var PurchasesPageNgFactory = new import13.ComponentFactory('page-purchases', viewFactory_PurchasesPage_Host0, import3.PurchasesPage);
 var styles_PurchasesPage = [];
 var renderType_PurchasesPage = null;
 var _View_PurchasesPage0 = (function (_super) {
     __extends(_View_PurchasesPage0, _super);
     function _View_PurchasesPage0(viewUtils, parentInjector, declarationEl) {
-        _super.call(this, _View_PurchasesPage0, renderType_PurchasesPage, import7.ViewType.COMPONENT, viewUtils, parentInjector, declarationEl, import8.ChangeDetectorStatus.CheckAlways);
+        _super.call(this, _View_PurchasesPage0, renderType_PurchasesPage, import6.ViewType.COMPONENT, viewUtils, parentInjector, declarationEl, import7.ChangeDetectorStatus.CheckAlways);
     }
     _View_PurchasesPage0.prototype.createInternal = function (rootSelector) {
         var parentRenderNode = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
         this._text_0 = this.renderer.createText(parentRenderNode, '\n', null);
         this._el_1 = this.renderer.createElement(parentRenderNode, 'ion-header', null);
-        this._Header_1_3 = new import16.Header(this.parentInjector.get(import21.Config), new import22.ElementRef(this._el_1), this.renderer, this.parentInjector.get(import23.ViewController, null));
+        this._Header_1_3 = new import14.Header(this.parentInjector.get(import19.Config), new import20.ElementRef(this._el_1), this.renderer, this.parentInjector.get(import21.ViewController, null));
         this._text_2 = this.renderer.createText(this._el_1, '\n  ', null);
         this._el_3 = this.renderer.createElement(this._el_1, 'ion-navbar', null);
         this.renderer.setElementAttribute(this._el_3, 'class', 'toolbar');
         this.renderer.setElementAttribute(this._el_3, 'color', 'hometab');
         this._appEl_3 = new import2.AppElement(3, 1, this, this._el_3);
-        var compView_3 = import24.viewFactory_Navbar0(this.viewUtils, this.injector(3), this._appEl_3);
-        this._Navbar_3_4 = new import17.Navbar(this.parentInjector.get(import25.App), this.parentInjector.get(import23.ViewController, null), this.parentInjector.get(import12.NavController, null), this.parentInjector.get(import21.Config), new import22.ElementRef(this._el_3), this.renderer);
+        var compView_3 = import22.viewFactory_Navbar0(this.viewUtils, this.injector(3), this._appEl_3);
+        this._Navbar_3_4 = new import15.Navbar(this.parentInjector.get(import23.App), this.parentInjector.get(import21.ViewController, null), this.parentInjector.get(import10.NavController, null), this.parentInjector.get(import19.Config), new import20.ElementRef(this._el_3), this.renderer);
         this._appEl_3.initComponent(this._Navbar_3_4, [], compView_3);
         this._text_4 = this.renderer.createText(null, '\n    ', null);
         this._el_5 = this.renderer.createElement(null, 'ion-title', null);
         this._appEl_5 = new import2.AppElement(5, 3, this, this._el_5);
-        var compView_5 = import26.viewFactory_ToolbarTitle0(this.viewUtils, this.injector(5), this._appEl_5);
-        this._ToolbarTitle_5_4 = new import18.ToolbarTitle(this.parentInjector.get(import21.Config), new import22.ElementRef(this._el_5), this.renderer, this.parentInjector.get(import16.Toolbar, null), this._Navbar_3_4);
+        var compView_5 = import24.viewFactory_ToolbarTitle0(this.viewUtils, this.injector(5), this._appEl_5);
+        this._ToolbarTitle_5_4 = new import16.ToolbarTitle(this.parentInjector.get(import19.Config), new import20.ElementRef(this._el_5), this.renderer, this.parentInjector.get(import14.Toolbar, null), this._Navbar_3_4);
         this._appEl_5.initComponent(this._ToolbarTitle_5_4, [], compView_5);
         this._text_6 = this.renderer.createText(null, 'Suppliers', null);
         compView_5.create(this._ToolbarTitle_5_4, [[].concat([this._text_6])], null);
@@ -122,14 +116,14 @@ var _View_PurchasesPage0 = (function (_super) {
         this.renderer.setElementAttribute(this._el_10, 'class', 'home-background');
         this.renderer.setElementAttribute(this._el_10, 'padding', '');
         this._appEl_10 = new import2.AppElement(10, null, this, this._el_10);
-        var compView_10 = import27.viewFactory_Content0(this.viewUtils, this.injector(10), this._appEl_10);
-        this._Content_10_4 = new import19.Content(this.parentInjector.get(import21.Config), new import22.ElementRef(this._el_10), this.renderer, this.parentInjector.get(import25.App), this.parentInjector.get(import28.Keyboard), this.parentInjector.get(import29.NgZone), this.parentInjector.get(import23.ViewController, null), this.parentInjector.get(import30.Tabs, null));
+        var compView_10 = import25.viewFactory_Content0(this.viewUtils, this.injector(10), this._appEl_10);
+        this._Content_10_4 = new import17.Content(this.parentInjector.get(import19.Config), new import20.ElementRef(this._el_10), this.renderer, this.parentInjector.get(import23.App), this.parentInjector.get(import26.Keyboard), this.parentInjector.get(import27.NgZone), this.parentInjector.get(import21.ViewController, null), this.parentInjector.get(import28.Tabs, null));
         this._appEl_10.initComponent(this._Content_10_4, [], compView_10);
         this._text_11 = this.renderer.createText(null, '\n', null);
         this._anchor_12 = this.renderer.createTemplateAnchor(null, null);
         this._appEl_12 = new import2.AppElement(12, 10, this, this._anchor_12);
-        this._TemplateRef_12_5 = new import31.TemplateRef_(this._appEl_12, viewFactory_PurchasesPage1);
-        this._NgFor_12_6 = new import20.NgFor(this._appEl_12.vcRef, this._TemplateRef_12_5, this.parentInjector.get(import32.IterableDiffers), this.ref);
+        this._TemplateRef_12_5 = new import29.TemplateRef_(this._appEl_12, viewFactory_PurchasesPage1);
+        this._NgFor_12_6 = new import18.NgFor(this._appEl_12.vcRef, this._TemplateRef_12_5, this.parentInjector.get(import30.IterableDiffers), this.ref);
         this._text_13 = this.renderer.createText(null, '\n', null);
         compView_10.create(this._Content_10_4, [
             [],
@@ -141,11 +135,11 @@ var _View_PurchasesPage0 = (function (_super) {
             []
         ], null);
         this._text_14 = this.renderer.createText(parentRenderNode, '\n  \n', null);
-        this._expr_0 = import8.UNINITIALIZED;
-        this._expr_1 = import8.UNINITIALIZED;
-        this._expr_2 = import8.UNINITIALIZED;
-        this._expr_3 = import8.UNINITIALIZED;
-        this._expr_4 = import8.UNINITIALIZED;
+        this._expr_0 = import7.UNINITIALIZED;
+        this._expr_1 = import7.UNINITIALIZED;
+        this._expr_2 = import7.UNINITIALIZED;
+        this._expr_3 = import7.UNINITIALIZED;
+        this._expr_4 = import7.UNINITIALIZED;
         this.init([], [
             this._text_0,
             this._el_1,
@@ -166,22 +160,22 @@ var _View_PurchasesPage0 = (function (_super) {
         return null;
     };
     _View_PurchasesPage0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import18.ToolbarTitle) && ((5 <= requestNodeIndex) && (requestNodeIndex <= 6)))) {
+        if (((token === import16.ToolbarTitle) && ((5 <= requestNodeIndex) && (requestNodeIndex <= 6)))) {
             return this._ToolbarTitle_5_4;
         }
-        if (((token === import17.Navbar) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 7)))) {
+        if (((token === import15.Navbar) && ((3 <= requestNodeIndex) && (requestNodeIndex <= 7)))) {
             return this._Navbar_3_4;
         }
-        if (((token === import16.Header) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 8)))) {
+        if (((token === import14.Header) && ((1 <= requestNodeIndex) && (requestNodeIndex <= 8)))) {
             return this._Header_1_3;
         }
-        if (((token === import31.TemplateRef) && (12 === requestNodeIndex))) {
+        if (((token === import29.TemplateRef) && (12 === requestNodeIndex))) {
             return this._TemplateRef_12_5;
         }
-        if (((token === import20.NgFor) && (12 === requestNodeIndex))) {
+        if (((token === import18.NgFor) && (12 === requestNodeIndex))) {
             return this._NgFor_12_6;
         }
-        if (((token === import19.Content) && ((10 <= requestNodeIndex) && (requestNodeIndex <= 13)))) {
+        if (((token === import17.Content) && ((10 <= requestNodeIndex) && (requestNodeIndex <= 13)))) {
             return this._Content_10_4;
         }
         return notFoundResult;
@@ -189,7 +183,7 @@ var _View_PurchasesPage0 = (function (_super) {
     _View_PurchasesPage0.prototype.detectChangesInternal = function (throwOnChange) {
         var changes = null;
         var currVal_0 = 'hometab';
-        if (import5.checkBinding(throwOnChange, this._expr_0, currVal_0)) {
+        if (import4.checkBinding(throwOnChange, this._expr_0, currVal_0)) {
             this._Navbar_3_4.color = currVal_0;
             this._expr_0 = currVal_0;
         }
@@ -198,12 +192,12 @@ var _View_PurchasesPage0 = (function (_super) {
         }
         changes = null;
         var currVal_4 = this.context.purchaseData;
-        if (import5.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
+        if (import4.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
             this._NgFor_12_6.ngForOf = currVal_4;
             if ((changes === null)) {
                 (changes = {});
             }
-            changes['ngForOf'] = new import8.SimpleChange(this._expr_4, currVal_4);
+            changes['ngForOf'] = new import7.SimpleChange(this._expr_4, currVal_4);
             this._expr_4 = currVal_4;
         }
         if ((changes !== null)) {
@@ -214,17 +208,17 @@ var _View_PurchasesPage0 = (function (_super) {
         }
         this.detectContentChildrenChanges(throwOnChange);
         var currVal_1 = this._Navbar_3_4._hidden;
-        if (import5.checkBinding(throwOnChange, this._expr_1, currVal_1)) {
+        if (import4.checkBinding(throwOnChange, this._expr_1, currVal_1)) {
             this.renderer.setElementProperty(this._el_3, 'hidden', currVal_1);
             this._expr_1 = currVal_1;
         }
         var currVal_2 = this._Navbar_3_4._sbPadding;
-        if (import5.checkBinding(throwOnChange, this._expr_2, currVal_2)) {
+        if (import4.checkBinding(throwOnChange, this._expr_2, currVal_2)) {
             this.renderer.setElementClass(this._el_3, 'statusbar-padding', currVal_2);
             this._expr_2 = currVal_2;
         }
         var currVal_3 = this._Content_10_4._sbPadding;
-        if (import5.checkBinding(throwOnChange, this._expr_3, currVal_3)) {
+        if (import4.checkBinding(throwOnChange, this._expr_3, currVal_3)) {
             this.renderer.setElementClass(this._el_10, 'statusbar-padding', currVal_3);
             this._expr_3 = currVal_3;
         }
@@ -242,39 +236,39 @@ var _View_PurchasesPage0 = (function (_super) {
 }(import1.AppView));
 export function viewFactory_PurchasesPage0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_PurchasesPage === null)) {
-        (renderType_PurchasesPage = viewUtils.createRenderComponentType('', 0, import14.ViewEncapsulation.None, styles_PurchasesPage, {}));
+        (renderType_PurchasesPage = viewUtils.createRenderComponentType('', 0, import12.ViewEncapsulation.None, styles_PurchasesPage, {}));
     }
     return new _View_PurchasesPage0(viewUtils, parentInjector, declarationEl);
 }
 var _View_PurchasesPage1 = (function (_super) {
     __extends(_View_PurchasesPage1, _super);
     function _View_PurchasesPage1(viewUtils, parentInjector, declarationEl) {
-        _super.call(this, _View_PurchasesPage1, renderType_PurchasesPage, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import8.ChangeDetectorStatus.CheckAlways);
+        _super.call(this, _View_PurchasesPage1, renderType_PurchasesPage, import6.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import7.ChangeDetectorStatus.CheckAlways);
     }
     _View_PurchasesPage1.prototype.createInternal = function (rootSelector) {
         this._el_0 = this.renderer.createElement(null, 'ion-card', null);
         this.renderer.setElementAttribute(this._el_0, 'class', 'card-round');
-        this._Card_0_3 = new import33.Card(this.parent.parentInjector.get(import21.Config), new import22.ElementRef(this._el_0), this.renderer);
+        this._Card_0_3 = new import31.Card(this.parent.parentInjector.get(import19.Config), new import20.ElementRef(this._el_0), this.renderer);
         this._text_1 = this.renderer.createText(this._el_0, '\n  ', null);
         this._el_2 = this.renderer.createElement(this._el_0, 'ion-card-header', null);
-        this._CardHeader_2_3 = new import33.CardHeader();
+        this._CardHeader_2_3 = new import31.CardHeader();
         this._text_3 = this.renderer.createText(this._el_2, '\n    ', null);
         this._el_4 = this.renderer.createElement(this._el_2, 'div', null);
         this._text_5 = this.renderer.createText(this._el_4, '', null);
         this._text_6 = this.renderer.createText(this._el_2, '\n  ', null);
         this._text_7 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_8 = this.renderer.createElement(this._el_0, 'ion-card-content', null);
-        this._CardContent_8_3 = new import33.CardContent();
+        this._CardContent_8_3 = new import31.CardContent();
         this._text_9 = this.renderer.createText(this._el_8, '\n      ', null);
         this._el_10 = this.renderer.createElement(this._el_8, 'ion-grid', null);
-        this._Grid_10_3 = new import34.Grid();
+        this._Grid_10_3 = new import32.Grid();
         this._text_11 = this.renderer.createText(this._el_10, '\n        ', null);
         this._el_12 = this.renderer.createElement(this._el_10, 'ion-row', null);
-        this._Row_12_3 = new import34.Row();
+        this._Row_12_3 = new import32.Row();
         this._text_13 = this.renderer.createText(this._el_12, '\n          ', null);
         this._el_14 = this.renderer.createElement(this._el_12, 'ion-col', null);
         this.renderer.setElementAttribute(this._el_14, 'width-50', '');
-        this._Col_14_3 = new import34.Col();
+        this._Col_14_3 = new import32.Col();
         this._text_15 = this.renderer.createText(this._el_14, '\n            ', null);
         this._el_16 = this.renderer.createElement(this._el_14, 'h2', null);
         this._text_17 = this.renderer.createText(this._el_16, 'Qty', null);
@@ -284,13 +278,13 @@ var _View_PurchasesPage1 = (function (_super) {
         this.renderer.setElementAttribute(this._el_20, 'class', 'card-titler');
         this.renderer.setElementAttribute(this._el_20, 'name', 'pie');
         this.renderer.setElementAttribute(this._el_20, 'role', 'img');
-        this._Icon_20_3 = new import35.Icon(this.parent.parentInjector.get(import21.Config), new import22.ElementRef(this._el_20), this.renderer);
+        this._Icon_20_3 = new import33.Icon(this.parent.parentInjector.get(import19.Config), new import20.ElementRef(this._el_20), this.renderer);
         this._text_21 = this.renderer.createText(this._el_20, '', null);
         this._text_22 = this.renderer.createText(this._el_14, '\n          ', null);
         this._text_23 = this.renderer.createText(this._el_12, '\n          ', null);
         this._el_24 = this.renderer.createElement(this._el_12, 'ion-col', null);
         this.renderer.setElementAttribute(this._el_24, 'width-50', '');
-        this._Col_24_3 = new import34.Col();
+        this._Col_24_3 = new import32.Col();
         this._text_25 = this.renderer.createText(this._el_24, '\n            ', null);
         this._el_26 = this.renderer.createElement(this._el_24, 'h2', null);
         this._text_27 = this.renderer.createText(this._el_26, 'Amount', null);
@@ -300,17 +294,17 @@ var _View_PurchasesPage1 = (function (_super) {
         this.renderer.setElementAttribute(this._el_30, 'class', 'card-titler');
         this.renderer.setElementAttribute(this._el_30, 'name', 'podium');
         this.renderer.setElementAttribute(this._el_30, 'role', 'img');
-        this._Icon_30_3 = new import35.Icon(this.parent.parentInjector.get(import21.Config), new import22.ElementRef(this._el_30), this.renderer);
+        this._Icon_30_3 = new import33.Icon(this.parent.parentInjector.get(import19.Config), new import20.ElementRef(this._el_30), this.renderer);
         this._text_31 = this.renderer.createText(this._el_30, '', null);
         this._text_32 = this.renderer.createText(this._el_24, '\n          ', null);
         this._text_33 = this.renderer.createText(this._el_12, '\n        ', null);
         this._text_34 = this.renderer.createText(this._el_10, '\n        ', null);
         this._el_35 = this.renderer.createElement(this._el_10, 'ion-row', null);
-        this._Row_35_3 = new import34.Row();
+        this._Row_35_3 = new import32.Row();
         this._text_36 = this.renderer.createText(this._el_35, '\n          ', null);
         this._el_37 = this.renderer.createElement(this._el_35, 'ion-col', null);
         this.renderer.setElementAttribute(this._el_37, 'width-50', '');
-        this._Col_37_3 = new import34.Col();
+        this._Col_37_3 = new import32.Col();
         this._text_38 = this.renderer.createText(this._el_37, '\n            ', null);
         this._el_39 = this.renderer.createElement(this._el_37, 'h2', null);
         this._text_40 = this.renderer.createText(this._el_39, 'Tax Amount', null);
@@ -320,13 +314,13 @@ var _View_PurchasesPage1 = (function (_super) {
         this.renderer.setElementAttribute(this._el_43, 'class', 'card-titler');
         this.renderer.setElementAttribute(this._el_43, 'name', 'stats');
         this.renderer.setElementAttribute(this._el_43, 'role', 'img');
-        this._Icon_43_3 = new import35.Icon(this.parent.parentInjector.get(import21.Config), new import22.ElementRef(this._el_43), this.renderer);
+        this._Icon_43_3 = new import33.Icon(this.parent.parentInjector.get(import19.Config), new import20.ElementRef(this._el_43), this.renderer);
         this._text_44 = this.renderer.createText(this._el_43, '', null);
         this._text_45 = this.renderer.createText(this._el_37, '\n          ', null);
         this._text_46 = this.renderer.createText(this._el_35, '\n          ', null);
         this._el_47 = this.renderer.createElement(this._el_35, 'ion-col', null);
         this.renderer.setElementAttribute(this._el_47, 'width-50', '');
-        this._Col_47_3 = new import34.Col();
+        this._Col_47_3 = new import32.Col();
         this._text_48 = this.renderer.createText(this._el_47, '\n            ', null);
         this._el_49 = this.renderer.createElement(this._el_47, 'h2', null);
         this._text_50 = this.renderer.createText(this._el_49, 'Profit', null);
@@ -336,17 +330,17 @@ var _View_PurchasesPage1 = (function (_super) {
         this.renderer.setElementAttribute(this._el_53, 'class', 'card-titler');
         this.renderer.setElementAttribute(this._el_53, 'name', 'ribbon');
         this.renderer.setElementAttribute(this._el_53, 'role', 'img');
-        this._Icon_53_3 = new import35.Icon(this.parent.parentInjector.get(import21.Config), new import22.ElementRef(this._el_53), this.renderer);
+        this._Icon_53_3 = new import33.Icon(this.parent.parentInjector.get(import19.Config), new import20.ElementRef(this._el_53), this.renderer);
         this._text_54 = this.renderer.createText(this._el_53, '', null);
         this._text_55 = this.renderer.createText(this._el_47, '\n          ', null);
         this._text_56 = this.renderer.createText(this._el_35, '\n        ', null);
         this._text_57 = this.renderer.createText(this._el_10, '\n        ', null);
         this._el_58 = this.renderer.createElement(this._el_10, 'ion-row', null);
-        this._Row_58_3 = new import34.Row();
+        this._Row_58_3 = new import32.Row();
         this._text_59 = this.renderer.createText(this._el_58, '\n          ', null);
         this._el_60 = this.renderer.createElement(this._el_58, 'ion-col', null);
         this.renderer.setElementAttribute(this._el_60, 'width-50', '');
-        this._Col_60_3 = new import34.Col();
+        this._Col_60_3 = new import32.Col();
         this._text_61 = this.renderer.createText(this._el_60, '\n            ', null);
         this._el_62 = this.renderer.createElement(this._el_60, 'h2', null);
         this._text_63 = this.renderer.createText(this._el_62, 'Stock Qty', null);
@@ -356,13 +350,13 @@ var _View_PurchasesPage1 = (function (_super) {
         this.renderer.setElementAttribute(this._el_66, 'class', 'card-titler');
         this.renderer.setElementAttribute(this._el_66, 'name', 'stats');
         this.renderer.setElementAttribute(this._el_66, 'role', 'img');
-        this._Icon_66_3 = new import35.Icon(this.parent.parentInjector.get(import21.Config), new import22.ElementRef(this._el_66), this.renderer);
+        this._Icon_66_3 = new import33.Icon(this.parent.parentInjector.get(import19.Config), new import20.ElementRef(this._el_66), this.renderer);
         this._text_67 = this.renderer.createText(this._el_66, '', null);
         this._text_68 = this.renderer.createText(this._el_60, '\n          ', null);
         this._text_69 = this.renderer.createText(this._el_58, '\n          ', null);
         this._el_70 = this.renderer.createElement(this._el_58, 'ion-col', null);
         this.renderer.setElementAttribute(this._el_70, 'width-50', '');
-        this._Col_70_3 = new import34.Col();
+        this._Col_70_3 = new import32.Col();
         this._text_71 = this.renderer.createText(this._el_70, '\n            ', null);
         this._el_72 = this.renderer.createElement(this._el_70, 'h2', null);
         this._text_73 = this.renderer.createText(this._el_72, 'Stock Value', null);
@@ -372,33 +366,33 @@ var _View_PurchasesPage1 = (function (_super) {
         this.renderer.setElementAttribute(this._el_76, 'class', 'card-titler');
         this.renderer.setElementAttribute(this._el_76, 'name', 'ribbon');
         this.renderer.setElementAttribute(this._el_76, 'role', 'img');
-        this._Icon_76_3 = new import35.Icon(this.parent.parentInjector.get(import21.Config), new import22.ElementRef(this._el_76), this.renderer);
+        this._Icon_76_3 = new import33.Icon(this.parent.parentInjector.get(import19.Config), new import20.ElementRef(this._el_76), this.renderer);
         this._text_77 = this.renderer.createText(this._el_76, '', null);
         this._text_78 = this.renderer.createText(this._el_70, '\n          ', null);
         this._text_79 = this.renderer.createText(this._el_58, '\n        ', null);
         this._text_80 = this.renderer.createText(this._el_10, '\n      ', null);
         this._text_81 = this.renderer.createText(this._el_8, '\n    ', null);
         this._text_82 = this.renderer.createText(this._el_0, '\n', null);
-        this._expr_0 = import8.UNINITIALIZED;
-        this._expr_1 = import8.UNINITIALIZED;
-        this._expr_2 = import8.UNINITIALIZED;
-        this._expr_3 = import8.UNINITIALIZED;
-        this._expr_4 = import8.UNINITIALIZED;
-        this._expr_5 = import8.UNINITIALIZED;
-        this._expr_6 = import8.UNINITIALIZED;
-        this._expr_7 = import8.UNINITIALIZED;
-        this._expr_8 = import8.UNINITIALIZED;
-        this._expr_9 = import8.UNINITIALIZED;
-        this._expr_10 = import8.UNINITIALIZED;
-        this._expr_11 = import8.UNINITIALIZED;
-        this._expr_12 = import8.UNINITIALIZED;
-        this._expr_13 = import8.UNINITIALIZED;
-        this._expr_14 = import8.UNINITIALIZED;
-        this._expr_15 = import8.UNINITIALIZED;
-        this._expr_16 = import8.UNINITIALIZED;
-        this._expr_17 = import8.UNINITIALIZED;
-        this._expr_18 = import8.UNINITIALIZED;
-        this._expr_19 = import8.UNINITIALIZED;
+        this._expr_0 = import7.UNINITIALIZED;
+        this._expr_1 = import7.UNINITIALIZED;
+        this._expr_2 = import7.UNINITIALIZED;
+        this._expr_3 = import7.UNINITIALIZED;
+        this._expr_4 = import7.UNINITIALIZED;
+        this._expr_5 = import7.UNINITIALIZED;
+        this._expr_6 = import7.UNINITIALIZED;
+        this._expr_7 = import7.UNINITIALIZED;
+        this._expr_8 = import7.UNINITIALIZED;
+        this._expr_9 = import7.UNINITIALIZED;
+        this._expr_10 = import7.UNINITIALIZED;
+        this._expr_11 = import7.UNINITIALIZED;
+        this._expr_12 = import7.UNINITIALIZED;
+        this._expr_13 = import7.UNINITIALIZED;
+        this._expr_14 = import7.UNINITIALIZED;
+        this._expr_15 = import7.UNINITIALIZED;
+        this._expr_16 = import7.UNINITIALIZED;
+        this._expr_17 = import7.UNINITIALIZED;
+        this._expr_18 = import7.UNINITIALIZED;
+        this._expr_19 = import7.UNINITIALIZED;
         this.init([].concat([this._el_0]), [
             this._el_0,
             this._text_1,
@@ -487,164 +481,164 @@ var _View_PurchasesPage1 = (function (_super) {
         return null;
     };
     _View_PurchasesPage1.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import33.CardHeader) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 6)))) {
+        if (((token === import31.CardHeader) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 6)))) {
             return this._CardHeader_2_3;
         }
-        if (((token === import35.Icon) && ((20 <= requestNodeIndex) && (requestNodeIndex <= 21)))) {
+        if (((token === import33.Icon) && ((20 <= requestNodeIndex) && (requestNodeIndex <= 21)))) {
             return this._Icon_20_3;
         }
-        if (((token === import34.Col) && ((14 <= requestNodeIndex) && (requestNodeIndex <= 22)))) {
+        if (((token === import32.Col) && ((14 <= requestNodeIndex) && (requestNodeIndex <= 22)))) {
             return this._Col_14_3;
         }
-        if (((token === import35.Icon) && ((30 <= requestNodeIndex) && (requestNodeIndex <= 31)))) {
+        if (((token === import33.Icon) && ((30 <= requestNodeIndex) && (requestNodeIndex <= 31)))) {
             return this._Icon_30_3;
         }
-        if (((token === import34.Col) && ((24 <= requestNodeIndex) && (requestNodeIndex <= 32)))) {
+        if (((token === import32.Col) && ((24 <= requestNodeIndex) && (requestNodeIndex <= 32)))) {
             return this._Col_24_3;
         }
-        if (((token === import34.Row) && ((12 <= requestNodeIndex) && (requestNodeIndex <= 33)))) {
+        if (((token === import32.Row) && ((12 <= requestNodeIndex) && (requestNodeIndex <= 33)))) {
             return this._Row_12_3;
         }
-        if (((token === import35.Icon) && ((43 <= requestNodeIndex) && (requestNodeIndex <= 44)))) {
+        if (((token === import33.Icon) && ((43 <= requestNodeIndex) && (requestNodeIndex <= 44)))) {
             return this._Icon_43_3;
         }
-        if (((token === import34.Col) && ((37 <= requestNodeIndex) && (requestNodeIndex <= 45)))) {
+        if (((token === import32.Col) && ((37 <= requestNodeIndex) && (requestNodeIndex <= 45)))) {
             return this._Col_37_3;
         }
-        if (((token === import35.Icon) && ((53 <= requestNodeIndex) && (requestNodeIndex <= 54)))) {
+        if (((token === import33.Icon) && ((53 <= requestNodeIndex) && (requestNodeIndex <= 54)))) {
             return this._Icon_53_3;
         }
-        if (((token === import34.Col) && ((47 <= requestNodeIndex) && (requestNodeIndex <= 55)))) {
+        if (((token === import32.Col) && ((47 <= requestNodeIndex) && (requestNodeIndex <= 55)))) {
             return this._Col_47_3;
         }
-        if (((token === import34.Row) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 56)))) {
+        if (((token === import32.Row) && ((35 <= requestNodeIndex) && (requestNodeIndex <= 56)))) {
             return this._Row_35_3;
         }
-        if (((token === import35.Icon) && ((66 <= requestNodeIndex) && (requestNodeIndex <= 67)))) {
+        if (((token === import33.Icon) && ((66 <= requestNodeIndex) && (requestNodeIndex <= 67)))) {
             return this._Icon_66_3;
         }
-        if (((token === import34.Col) && ((60 <= requestNodeIndex) && (requestNodeIndex <= 68)))) {
+        if (((token === import32.Col) && ((60 <= requestNodeIndex) && (requestNodeIndex <= 68)))) {
             return this._Col_60_3;
         }
-        if (((token === import35.Icon) && ((76 <= requestNodeIndex) && (requestNodeIndex <= 77)))) {
+        if (((token === import33.Icon) && ((76 <= requestNodeIndex) && (requestNodeIndex <= 77)))) {
             return this._Icon_76_3;
         }
-        if (((token === import34.Col) && ((70 <= requestNodeIndex) && (requestNodeIndex <= 78)))) {
+        if (((token === import32.Col) && ((70 <= requestNodeIndex) && (requestNodeIndex <= 78)))) {
             return this._Col_70_3;
         }
-        if (((token === import34.Row) && ((58 <= requestNodeIndex) && (requestNodeIndex <= 79)))) {
+        if (((token === import32.Row) && ((58 <= requestNodeIndex) && (requestNodeIndex <= 79)))) {
             return this._Row_58_3;
         }
-        if (((token === import34.Grid) && ((10 <= requestNodeIndex) && (requestNodeIndex <= 80)))) {
+        if (((token === import32.Grid) && ((10 <= requestNodeIndex) && (requestNodeIndex <= 80)))) {
             return this._Grid_10_3;
         }
-        if (((token === import33.CardContent) && ((8 <= requestNodeIndex) && (requestNodeIndex <= 81)))) {
+        if (((token === import31.CardContent) && ((8 <= requestNodeIndex) && (requestNodeIndex <= 81)))) {
             return this._CardContent_8_3;
         }
-        if (((token === import33.Card) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 82)))) {
+        if (((token === import31.Card) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 82)))) {
             return this._Card_0_3;
         }
         return notFoundResult;
     };
     _View_PurchasesPage1.prototype.detectChangesInternal = function (throwOnChange) {
         var currVal_2 = 'pie';
-        if (import5.checkBinding(throwOnChange, this._expr_2, currVal_2)) {
+        if (import4.checkBinding(throwOnChange, this._expr_2, currVal_2)) {
             this._Icon_20_3.name = currVal_2;
             this._expr_2 = currVal_2;
         }
         var currVal_5 = 'podium';
-        if (import5.checkBinding(throwOnChange, this._expr_5, currVal_5)) {
+        if (import4.checkBinding(throwOnChange, this._expr_5, currVal_5)) {
             this._Icon_30_3.name = currVal_5;
             this._expr_5 = currVal_5;
         }
         var currVal_8 = 'stats';
-        if (import5.checkBinding(throwOnChange, this._expr_8, currVal_8)) {
+        if (import4.checkBinding(throwOnChange, this._expr_8, currVal_8)) {
             this._Icon_43_3.name = currVal_8;
             this._expr_8 = currVal_8;
         }
         var currVal_11 = 'ribbon';
-        if (import5.checkBinding(throwOnChange, this._expr_11, currVal_11)) {
+        if (import4.checkBinding(throwOnChange, this._expr_11, currVal_11)) {
             this._Icon_53_3.name = currVal_11;
             this._expr_11 = currVal_11;
         }
         var currVal_14 = 'stats';
-        if (import5.checkBinding(throwOnChange, this._expr_14, currVal_14)) {
+        if (import4.checkBinding(throwOnChange, this._expr_14, currVal_14)) {
             this._Icon_66_3.name = currVal_14;
             this._expr_14 = currVal_14;
         }
         var currVal_17 = 'ribbon';
-        if (import5.checkBinding(throwOnChange, this._expr_17, currVal_17)) {
+        if (import4.checkBinding(throwOnChange, this._expr_17, currVal_17)) {
             this._Icon_76_3.name = currVal_17;
             this._expr_17 = currVal_17;
         }
         this.detectContentChildrenChanges(throwOnChange);
-        var currVal_0 = import5.interpolate(1, 'card-tab-bg-', this.context.$implicit.color, ' font-bold');
-        if (import5.checkBinding(throwOnChange, this._expr_0, currVal_0)) {
+        var currVal_0 = import4.interpolate(1, 'card-tab-bg-', this.context.$implicit.color, ' font-bold');
+        if (import4.checkBinding(throwOnChange, this._expr_0, currVal_0)) {
             this.renderer.setElementProperty(this._el_2, 'className', currVal_0);
             this._expr_0 = currVal_0;
         }
-        var currVal_1 = import5.interpolate(1, '', this.context.$implicit.supplier, '');
-        if (import5.checkBinding(throwOnChange, this._expr_1, currVal_1)) {
+        var currVal_1 = import4.interpolate(1, '', this.context.$implicit.supplier, '');
+        if (import4.checkBinding(throwOnChange, this._expr_1, currVal_1)) {
             this.renderer.setText(this._text_5, currVal_1);
             this._expr_1 = currVal_1;
         }
         var currVal_3 = this._Icon_20_3._hidden;
-        if (import5.checkBinding(throwOnChange, this._expr_3, currVal_3)) {
+        if (import4.checkBinding(throwOnChange, this._expr_3, currVal_3)) {
             this.renderer.setElementClass(this._el_20, 'hide', currVal_3);
             this._expr_3 = currVal_3;
         }
-        var currVal_4 = import5.interpolate(1, ' ', this.context.$implicit.qty, '');
-        if (import5.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
+        var currVal_4 = import4.interpolate(1, ' ', this.context.$implicit.qty, '');
+        if (import4.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
             this.renderer.setText(this._text_21, currVal_4);
             this._expr_4 = currVal_4;
         }
         var currVal_6 = this._Icon_30_3._hidden;
-        if (import5.checkBinding(throwOnChange, this._expr_6, currVal_6)) {
+        if (import4.checkBinding(throwOnChange, this._expr_6, currVal_6)) {
             this.renderer.setElementClass(this._el_30, 'hide', currVal_6);
             this._expr_6 = currVal_6;
         }
-        var currVal_7 = import5.interpolate(1, ' ', this.context.$implicit.amount, '');
-        if (import5.checkBinding(throwOnChange, this._expr_7, currVal_7)) {
+        var currVal_7 = import4.interpolate(1, ' ', this.context.$implicit.amount, '');
+        if (import4.checkBinding(throwOnChange, this._expr_7, currVal_7)) {
             this.renderer.setText(this._text_31, currVal_7);
             this._expr_7 = currVal_7;
         }
         var currVal_9 = this._Icon_43_3._hidden;
-        if (import5.checkBinding(throwOnChange, this._expr_9, currVal_9)) {
+        if (import4.checkBinding(throwOnChange, this._expr_9, currVal_9)) {
             this.renderer.setElementClass(this._el_43, 'hide', currVal_9);
             this._expr_9 = currVal_9;
         }
-        var currVal_10 = import5.interpolate(1, ' ', this.context.$implicit.taxamount, '');
-        if (import5.checkBinding(throwOnChange, this._expr_10, currVal_10)) {
+        var currVal_10 = import4.interpolate(1, ' ', this.context.$implicit.taxamount, '');
+        if (import4.checkBinding(throwOnChange, this._expr_10, currVal_10)) {
             this.renderer.setText(this._text_44, currVal_10);
             this._expr_10 = currVal_10;
         }
         var currVal_12 = this._Icon_53_3._hidden;
-        if (import5.checkBinding(throwOnChange, this._expr_12, currVal_12)) {
+        if (import4.checkBinding(throwOnChange, this._expr_12, currVal_12)) {
             this.renderer.setElementClass(this._el_53, 'hide', currVal_12);
             this._expr_12 = currVal_12;
         }
-        var currVal_13 = import5.interpolate(1, ' ', this.context.$implicit.profit, '%');
-        if (import5.checkBinding(throwOnChange, this._expr_13, currVal_13)) {
+        var currVal_13 = import4.interpolate(1, ' ', this.context.$implicit.profit, '%');
+        if (import4.checkBinding(throwOnChange, this._expr_13, currVal_13)) {
             this.renderer.setText(this._text_54, currVal_13);
             this._expr_13 = currVal_13;
         }
         var currVal_15 = this._Icon_66_3._hidden;
-        if (import5.checkBinding(throwOnChange, this._expr_15, currVal_15)) {
+        if (import4.checkBinding(throwOnChange, this._expr_15, currVal_15)) {
             this.renderer.setElementClass(this._el_66, 'hide', currVal_15);
             this._expr_15 = currVal_15;
         }
-        var currVal_16 = import5.interpolate(1, ' ', this.context.$implicit.stockqty, '');
-        if (import5.checkBinding(throwOnChange, this._expr_16, currVal_16)) {
+        var currVal_16 = import4.interpolate(1, ' ', this.context.$implicit.stockqty, '');
+        if (import4.checkBinding(throwOnChange, this._expr_16, currVal_16)) {
             this.renderer.setText(this._text_67, currVal_16);
             this._expr_16 = currVal_16;
         }
         var currVal_18 = this._Icon_76_3._hidden;
-        if (import5.checkBinding(throwOnChange, this._expr_18, currVal_18)) {
+        if (import4.checkBinding(throwOnChange, this._expr_18, currVal_18)) {
             this.renderer.setElementClass(this._el_76, 'hide', currVal_18);
             this._expr_18 = currVal_18;
         }
-        var currVal_19 = import5.interpolate(1, ' ', this.context.$implicit.stockvalue, '');
-        if (import5.checkBinding(throwOnChange, this._expr_19, currVal_19)) {
+        var currVal_19 = import4.interpolate(1, ' ', this.context.$implicit.stockvalue, '');
+        if (import4.checkBinding(throwOnChange, this._expr_19, currVal_19)) {
             this.renderer.setText(this._text_77, currVal_19);
             this._expr_19 = currVal_19;
         }

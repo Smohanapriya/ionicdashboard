@@ -11,7 +11,7 @@ import {StaffService} from '../../providers/staff-service';
 @Component({
   selector: 'page-staff',
   templateUrl: 'staff.html',
-  providers:[StaffService]
+  providers:[]
 })
 export class StaffPage {
 public staffData:Staff[]=[];

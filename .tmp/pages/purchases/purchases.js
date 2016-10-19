@@ -36,7 +36,7 @@ export var PurchasesPage = (function () {
         { type: Component, args: [{
                     selector: 'page-purchases',
                     templateUrl: 'purchases.html',
-                    providers: [AllPurchaseService]
+                    providers: []
                 },] },
     ];
     /** @nocollapse */

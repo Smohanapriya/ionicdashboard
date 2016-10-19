@@ -12,6 +12,12 @@ import { StockPage } from '../pages/stock/stock';
 import { StocksPage } from '../pages/stocks/stocks';
 import { ConnectionService } from '../providers/connection-service';
 import { SalesService } from '../providers/sales-service';
+import { AllPurchaseService } from '../providers/allpurchase-service';
+import { AllSalesService } from '../providers/allsales-service';
+import { AllStocksService } from '../providers/allstocks-service';
+import { PurchaseService } from '../providers/purchase-service';
+import { StaffService } from '../providers/staff-service';
+import { StocksService } from '../providers/stocks-service';
 
 @NgModule({
   declarations: [
@@ -43,6 +49,7 @@ import { SalesService } from '../providers/sales-service';
     StockPage,
     StocksPage
   ],
-  providers: [ConnectionService,SalesService]
+  providers: [ConnectionService,SalesService,AllPurchaseService,AllSalesService,
+  AllStocksService,PurchaseService,StaffService,StocksService]
 })
 export class AppModule {}

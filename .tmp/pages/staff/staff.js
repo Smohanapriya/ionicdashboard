@@ -34,7 +34,7 @@ export var StaffPage = (function () {
         { type: Component, args: [{
                     selector: 'page-staff',
                     templateUrl: 'staff.html',
-                    providers: [StaffService]
+                    providers: []
                 },] },
     ];
     /** @nocollapse */
