@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { AllSalesService } from '../../providers/allsales-service';
+import { SalesGraph } from '../sales-graph/sales-graph'
 /*
   Generated class for the Sales page.
 
@@ -15,10 +16,10 @@ import { AllSalesService } from '../../providers/allsales-service';
 export class SalesPage {
   public saleData: SaleVar[] = [];
   code: any;
-  alertCtrl:AlertController;
-  constructor(alertCtrl:AlertController,public service: AllSalesService, public loadingCtrl: LoadingController, public navCtrl: NavController, private navParams: NavParams) {
+  alertCtrl: AlertController;
+  constructor(alertCtrl: AlertController, public service: AllSalesService, public loadingCtrl: LoadingController, public navCtrl: NavController, private navParams: NavParams) {
     this.code = navParams.get('code');
-    
+
     this.alertCtrl = alertCtrl;
 
     service.getAllSalesData(this.code).subscribe(response => {
@@ -39,10 +40,10 @@ export class SalesPage {
     loading.present();
   }
 
-  presentAlert(id:any) {
+  presentAlert(id: any) {
     let alert = this.alertCtrl.create({
       title: 'ID',
-      subTitle: 'CODE:'+id,
+      subTitle: 'CODE:' + id,
       buttons: ['Dismiss']
     });
     alert.present();
@@ -50,7 +51,9 @@ export class SalesPage {
   ionViewDidLoad() {
     this.presentLoading();
   }
-
+  goToSalesGraph() {
+    this.navCtrl.push(SalesGraph);
+  }
 }
 
 enum ColorCode {

@@ -12,6 +12,7 @@ export declare class SalesPage {
     presentLoading(): void;
     presentAlert(id: any): void;
     ionViewDidLoad(): void;
+    goToSalesGraph(): void;
 }
 export declare class SaleVar {
     section: any;

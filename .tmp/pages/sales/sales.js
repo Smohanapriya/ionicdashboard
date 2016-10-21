@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { AllSalesService } from '../../providers/allsales-service';
+import { SalesGraph } from '../sales-graph/sales-graph';
 /*
   Generated class for the Sales page.
 
@@ -40,6 +41,9 @@ export var SalesPage = (function () {
     };
     SalesPage.prototype.ionViewDidLoad = function () {
         this.presentLoading();
+    };
+    SalesPage.prototype.goToSalesGraph = function () {
+        this.navCtrl.push(SalesGraph);
     };
     SalesPage.decorators = [
         { type: Component, args: [{
