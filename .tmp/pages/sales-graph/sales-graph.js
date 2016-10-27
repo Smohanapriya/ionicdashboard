@@ -1,28 +1,42 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams, Platform } from 'ionic-angular';
+import { AllSalesService } from '../../providers/allsales-service';
 export var SalesGraph = (function () {
-    function SalesGraph(navCtrl) {
+    function SalesGraph(navCtrl, navParams, service, platform) {
+        var _this = this;
         this.navCtrl = navCtrl;
-        this.labels = ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"];
+        this.platform = platform;
+        this.profitData = [];
+        this.saleData = [];
+        this.labelData = [];
+        this.code = navParams.get('code');
+        console.log("THIS IS THE CODE RECEIEVD : " + this.code);
+        service.getAllSalesData(this.code).subscribe(function (response) {
+            JSON.parse(response._body).forEach(function (element) {
+                _this.profitData.push(element.PROFIT);
+                _this.labelData.push(element.SECTION);
+                _this.saleData.push(element.ACTSALES);
+            });
+        });
+        this.loadGraph(this.labelData, this.profitData, this.saleData);
+    }
+    SalesGraph.prototype.loadGraph = function (label, profit, sale) {
+        this.labels = label;
         this.data = [
             {
-                label: '# of Votes1',
-                data: [1, 9, 13, 15, 12, 13],
+                label: 'Profit',
+                data: profit,
                 backgroundColor: ['rgba(54, 162, 235, 0.2)'],
                 borderColor: ['rgba(54, 162, 235, 1)'],
                 borderWidth: 1
-            },
-            {
-                label: '# of Votes2',
-                data: [11, 19, 3, 5, 2, 3],
-                backgroundColor: ['rgba(255, 206, 86, 0.2)'],
-                borderColor: ['rgba(54, 162, 235, 1)'],
+            }, {
+                label: 'Actual Sales',
+                data: sale,
+                backgroundColor: ['rgba(145, 165, 235, 0.2)'],
+                borderColor: ['rgba(145, 165, 235, 1)'],
                 borderWidth: 1
             }
         ];
-    }
-    SalesGraph.prototype.ionViewDidLoad = function () {
-        console.log('Hello SalesGraph Page');
     };
     SalesGraph.decorators = [
         { type: Component, args: [{
@@ -33,6 +47,9 @@ export var SalesGraph = (function () {
     /** @nocollapse */
     SalesGraph.ctorParameters = [
         { type: NavController, },
+        { type: NavParams, },
+        { type: AllSalesService, },
+        { type: Platform, },
     ];
     return SalesGraph;
 }());

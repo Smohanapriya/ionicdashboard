@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Platform, NavController, AlertController } from 'ionic-angular';
+import { Platform, NavController } from 'ionic-angular';
 import { SalePage } from '../sale/sale';
 import { StockPage } from '../stock/stock';
 import { PurchasePage } from '../purchase/purchase';
@@ -15,7 +15,7 @@ import { ConnectionService } from '../../providers/connection-service';
 export class HomePage {
 
     connection: any;
-    constructor(public navCtrl: NavController, platform: Platform, service: ConnectionService, private alertCtrl: AlertController) {
+    constructor(public navCtrl: NavController, platform: Platform, service: ConnectionService) {
         this.navCtrl = navCtrl;
         platform.ready().then(() => service.getConnectionInfo())
             .then(
@@ -27,16 +27,6 @@ export class HomePage {
                 }
             }
             );
-    }
-
-
-    presentAlert(msg: string) {
-        let alert = this.alertCtrl.create({
-            title: 'Info!',
-            subTitle: msg,
-            buttons: ['Dismiss']
-        });
-        alert.present();
     }
 
     goToSale() {

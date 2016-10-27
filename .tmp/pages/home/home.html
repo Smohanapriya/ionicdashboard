@@ -1,28 +1,27 @@
-
-<ion-header >
-  <ion-navbar color="hometab">
-     <ion-buttons end>
-        <button ion-button clear (click)="goToSetting()">
+<ion-header>
+	<ion-navbar color="hometab">
+		<ion-buttons end>
+			<button ion-button clear (click)="goToSetting()">
           <ion-icon name="settings"></ion-icon>
         </button>
-      </ion-buttons>
-  </ion-navbar>
+		</ion-buttons>
+	</ion-navbar>
 </ion-header>
 <ion-content padding-5 class="home home-background">
-  <ion-grid>
-<ion-row class="homerow">
-    <div class="center">
-      <img src="assets/images/sslogo.svg" class="pt-page-moveFromTopFade sslogo"/>
-      
-      <h1 class="pt-page-moveFromTopFade">DARTH</h1>
-      <h6 class="pt-page-moveFromTopFade">Complete Retail Solution</h6>
-    </div>
-</ion-row>
-<ion-row class="homerow">
-  <ion-grid>
-    <ion-row>
-      <ion-col width-50 class="center-icon pt-page-fade">
-          <button ion-button clear class="home-button pt-page-moveFromLeftFade" (click)="goToSale()">
+	<ion-grid>
+		<ion-row class="homerow">
+			<div class="center">
+				<img src="assets/images/sslogo.svg" class="pt-page-moveFromTopFade sslogo" />
+
+				<h1 class="pt-page-moveFromTopFade">DARTH</h1>
+				<h6 class="pt-page-moveFromTopFade">Complete Retail Solution</h6>
+			</div>
+		</ion-row>
+		<ion-row class="homerow">
+			<ion-grid>
+				<ion-row>
+					<ion-col width-50 class="center-icon pt-page-fade">
+						<button ion-button clear class="home-button pt-page-moveFromLeftFade" (click)="goToSale()">
             <ion-grid>
               <ion-row>
                 <ion-icon name="trending-up" class="center-icon ionfontstyle"></ion-icon>
@@ -32,9 +31,9 @@
               </ion-row>
             </ion-grid>
           </button>
-      </ion-col>
-      <ion-col width-50 class="center pt-page-fade">
-          <button ion-button clear class="home-button  pt-page-moveFromRightFade" (click)="goToStock()">
+					</ion-col>
+					<ion-col width-50 class="center pt-page-fade">
+						<button ion-button clear class="home-button  pt-page-moveFromRightFade" (click)="goToStock()">
             <ion-grid>
               <ion-row>
                 <ion-icon name="basket" class="center-icon ionfontstyle"></ion-icon>
@@ -44,11 +43,11 @@
               </ion-row>
             </ion-grid>
           </button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col width-50 class="center pt-page-fade">
-          <button ion-button clear class="home-button pt-page-moveFromLeftFade" (click)="goToPurchase()">
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col width-50 class="center pt-page-fade">
+						<button ion-button clear class="home-button pt-page-moveFromLeftFade" (click)="goToPurchase()">
             <ion-grid>
               <ion-row>
                 <ion-icon name="cart" class="center-icon ionfontstyle"></ion-icon>
@@ -58,9 +57,9 @@
               </ion-row>
             </ion-grid>
           </button>
-      </ion-col>
-      <ion-col width-50 class="center pt-page-fade">
-          <button ion-button clear class="home-button  pt-page-moveFromRightFade" (click)="goToStaff()">
+					</ion-col>
+					<ion-col width-50 class="center pt-page-fade">
+						<button ion-button clear class="home-button  pt-page-moveFromRightFade" (click)="goToStaff()">
             <ion-grid>
               <ion-row>
                 <ion-icon name="contacts" class="center-icon ionfontstyle"></ion-icon>
@@ -70,9 +69,9 @@
               </ion-row>
             </ion-grid>
           </button>
-      </ion-col>
-    </ion-row>
-    </ion-grid>
-</ion-row>
-</ion-grid>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-row>
+	</ion-grid>
 </ion-content>

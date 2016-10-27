@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
+import { NavController, NavParams, LoadingController } from 'ionic-angular';
 import { AllSalesService } from '../../providers/allsales-service';
 import { SalesGraph } from '../sales-graph/sales-graph';
 /*
@@ -9,7 +9,7 @@ import { SalesGraph } from '../sales-graph/sales-graph';
   Ionic pages and navigation.
 */
 export var SalesPage = (function () {
-    function SalesPage(alertCtrl, service, loadingCtrl, navCtrl, navParams) {
+    function SalesPage(service, loadingCtrl, navCtrl, navParams) {
         var _this = this;
         this.service = service;
         this.loadingCtrl = loadingCtrl;
@@ -17,7 +17,6 @@ export var SalesPage = (function () {
         this.navParams = navParams;
         this.saleData = [];
         this.code = navParams.get('code');
-        this.alertCtrl = alertCtrl;
         service.getAllSalesData(this.code).subscribe(function (response) {
             JSON.parse(response._body).forEach(function (element) {
                 _this.saleData.push(new SaleVar(element.SECTION, element.ACTSALES, element.DISCAMT, element.SALESAMT, element.PROFIT, element.ITEMCATEGORYCODE8, getRandomElementOfEnum(ColorCode)));
@@ -31,19 +30,13 @@ export var SalesPage = (function () {
         });
         loading.present();
     };
-    SalesPage.prototype.presentAlert = function (id) {
-        var alert = this.alertCtrl.create({
-            title: 'ID',
-            subTitle: 'CODE:' + id,
-            buttons: ['Dismiss']
-        });
-        alert.present();
-    };
     SalesPage.prototype.ionViewDidLoad = function () {
         this.presentLoading();
     };
     SalesPage.prototype.goToSalesGraph = function () {
-        this.navCtrl.push(SalesGraph);
+        this.navCtrl.push(SalesGraph, {
+            code: this.code
+        });
     };
     SalesPage.decorators = [
         { type: Component, args: [{
@@ -54,7 +47,6 @@ export var SalesPage = (function () {
     ];
     /** @nocollapse */
     SalesPage.ctorParameters = [
-        { type: AlertController, },
         { type: AllSalesService, },
         { type: LoadingController, },
         { type: NavController, },

@@ -17,7 +17,7 @@ export var SalePage = (function () {
         this.companyData = [];
         service.getSalesData().subscribe(function (response) {
             JSON.parse(response._body).forEach(function (element) {
-                _this.companyData.push(new Company(element.COMPANY, element.ACTSALES, element.DISCAMT, element.SALESAMT, element.PROFIT, element.COMPANYCODE, element.SHORTNAME, getRandomElementOfEnum(ColorCode)));
+                _this.companyData.push(new Company(element.COMPANY, element.ACTSALES, element.DISCAMT, element.SALESAMT, element.PROFIT, element.COMPANYCODE, element.SHORTNAME, getRandomColor(ColorCode)));
             });
         });
     }
@@ -32,7 +32,6 @@ export var SalePage = (function () {
         this.presentLoading();
     };
     SalePage.prototype.companyClicked = function (event, item) {
-        console.log(item.companycode);
         this.navController.push(SalesPage, {
             code: item.companycode
         });
@@ -74,7 +73,7 @@ var ColorCode;
     ColorCode[ColorCode["grey"] = 17] = "grey";
     ColorCode[ColorCode["bluegrey"] = 18] = "bluegrey";
 })(ColorCode || (ColorCode = {}));
-function getRandomElementOfEnum(e) {
+function getRandomColor(e) {
     var length = Object.keys(e).length / 2;
     return e[Math.floor((Math.random() * length))];
 }

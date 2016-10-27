@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Platform, NavController, AlertController } from 'ionic-angular';
+import { Platform, NavController } from 'ionic-angular';
 import { SalePage } from '../sale/sale';
 import { StockPage } from '../stock/stock';
 import { PurchasePage } from '../purchase/purchase';
@@ -7,10 +7,9 @@ import { StaffPage } from '../staff/staff';
 import { SettingPage } from '../setting/setting';
 import { ConnectionService } from '../../providers/connection-service';
 export var HomePage = (function () {
-    function HomePage(navCtrl, platform, service, alertCtrl) {
+    function HomePage(navCtrl, platform, service) {
         var _this = this;
         this.navCtrl = navCtrl;
-        this.alertCtrl = alertCtrl;
         this.navCtrl = navCtrl;
         platform.ready().then(function () { return service.getConnectionInfo(); })
             .then(function (data) {
@@ -21,14 +20,6 @@ export var HomePage = (function () {
             }
         });
     }
-    HomePage.prototype.presentAlert = function (msg) {
-        var alert = this.alertCtrl.create({
-            title: 'Info!',
-            subTitle: msg,
-            buttons: ['Dismiss']
-        });
-        alert.present();
-    };
     HomePage.prototype.goToSale = function () {
         this.navCtrl.push(SalePage);
     };
@@ -58,7 +49,6 @@ export var HomePage = (function () {
         { type: NavController, },
         { type: Platform, },
         { type: ConnectionService, },
-        { type: AlertController, },
     ];
     return HomePage;
 }());
