@@ -324,7 +324,7 @@ var _View_SalesPage0 = (function (_super) {
 }(import1.AppView));
 export function viewFactory_SalesPage0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_SalesPage === null)) {
-        (renderType_SalesPage = viewUtils.createRenderComponentType('', 0, import12.ViewEncapsulation.None, styles_SalesPage, {}));
+        (renderType_SalesPage = viewUtils.createRenderComponentType('/Users/sivasakthisoftwares/Desktop/Android/ionicdashboard/.tmp/pages/sales/sales.html', 0, import12.ViewEncapsulation.None, styles_SalesPage, {}));
     }
     return new _View_SalesPage0(viewUtils, parentInjector, declarationEl);
 }

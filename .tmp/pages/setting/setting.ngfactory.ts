@@ -59,9 +59,9 @@ class _View_SettingPage_Host0 extends import1.AppView<any> {
     this._appEl_0 = new import2.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_SettingPage0(this.viewUtils,this.injector(0),this._appEl_0);
     this._SettingPage_0_4 = new import3.SettingPage(this.parentInjector.get(import8.NavController),this.parentInjector.get(import9.Platform),this.parentInjector.get(import10.ConnectionService),this.parentInjector.get(import11.NavParams));
-    this._appEl_0.initComponent(this._SettingPage_0_4,([] as any[]),compView_0);
+    this._appEl_0.initComponent(this._SettingPage_0_4,[],compView_0);
     compView_0.create(this._SettingPage_0_4,this.projectableNodes,(null as any));
-    this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
+    this.init([].concat([this._el_0]),[this._el_0],[],[]);
     return this._appEl_0;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
@@ -70,11 +70,11 @@ class _View_SettingPage_Host0 extends import1.AppView<any> {
   }
 }
 function viewFactory_SettingPage_Host0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement):import1.AppView<any> {
-  if ((renderType_SettingPage_Host === (null as any))) { (renderType_SettingPage_Host = viewUtils.createRenderComponentType('',0,import12.ViewEncapsulation.None,([] as any[]),{})); }
+  if ((renderType_SettingPage_Host === (null as any))) { (renderType_SettingPage_Host = viewUtils.createRenderComponentType('',0,import12.ViewEncapsulation.None,[],{})); }
   return new _View_SettingPage_Host0(viewUtils,parentInjector,declarationEl);
 }
 export const SettingPageNgFactory:import13.ComponentFactory<import3.SettingPage> = new import13.ComponentFactory<import3.SettingPage>('page-setting',viewFactory_SettingPage_Host0,import3.SettingPage);
-const styles_SettingPage:any[] = ([] as any[]);
+const styles_SettingPage:any[] = [];
 var renderType_SettingPage:import0.RenderComponentType = (null as any);
 class _View_SettingPage0 extends import1.AppView<import3.SettingPage> {
   _text_0:any;
@@ -193,21 +193,21 @@ class _View_SettingPage0 extends import1.AppView<import3.SettingPage> {
     this._appEl_3 = new import2.AppElement(3,1,this,this._el_3);
     var compView_3:any = import29.viewFactory_Navbar0(this.viewUtils,this.injector(3),this._appEl_3);
     this._Navbar_3_4 = new import15.Navbar(this.parentInjector.get(import30.App),this.parentInjector.get(import28.ViewController,(null as any)),this.parentInjector.get(import8.NavController,(null as any)),this.parentInjector.get(import26.Config),new import27.ElementRef(this._el_3),this.renderer);
-    this._appEl_3.initComponent(this._Navbar_3_4,([] as any[]),compView_3);
+    this._appEl_3.initComponent(this._Navbar_3_4,[],compView_3);
     this._text_4 = this.renderer.createText((null as any),'\n		',(null as any));
     this._el_5 = this.renderer.createElement((null as any),'ion-title',(null as any));
     this._appEl_5 = new import2.AppElement(5,3,this,this._el_5);
     var compView_5:any = import31.viewFactory_ToolbarTitle0(this.viewUtils,this.injector(5),this._appEl_5);
     this._ToolbarTitle_5_4 = new import16.ToolbarTitle(this.parentInjector.get(import26.Config),new import27.ElementRef(this._el_5),this.renderer,this.parentInjector.get(import14.Toolbar,(null as any)),this._Navbar_3_4);
-    this._appEl_5.initComponent(this._ToolbarTitle_5_4,([] as any[]),compView_5);
+    this._appEl_5.initComponent(this._ToolbarTitle_5_4,[],compView_5);
     this._text_6 = this.renderer.createText((null as any),'Settings',(null as any));
-    compView_5.create(this._ToolbarTitle_5_4,[([] as any[]).concat([this._text_6])],(null as any));
+    compView_5.create(this._ToolbarTitle_5_4,[[].concat([this._text_6])],(null as any));
     this._text_7 = this.renderer.createText((null as any),'\n	',(null as any));
     compView_3.create(this._Navbar_3_4,[
-      ([] as any[]),
-      ([] as any[]),
-      ([] as any[]),
-      ([] as any[]).concat([
+      [],
+      [],
+      [],
+      [].concat([
         this._text_4,
         this._el_5,
         this._text_7
@@ -223,7 +223,7 @@ class _View_SettingPage0 extends import1.AppView<import3.SettingPage> {
     this._appEl_10 = new import2.AppElement(10,(null as any),this,this._el_10);
     var compView_10:any = import32.viewFactory_Content0(this.viewUtils,this.injector(10),this._appEl_10);
     this._Content_10_4 = new import17.Content(this.parentInjector.get(import26.Config),new import27.ElementRef(this._el_10),this.renderer,this.parentInjector.get(import30.App),this.parentInjector.get(import33.Keyboard),this.parentInjector.get(import34.NgZone),this.parentInjector.get(import28.ViewController,(null as any)),this.parentInjector.get(import35.Tabs,(null as any)));
-    this._appEl_10.initComponent(this._Content_10_4,([] as any[]),compView_10);
+    this._appEl_10.initComponent(this._Content_10_4,[],compView_10);
     this._text_11 = this.renderer.createText((null as any),'\n	',(null as any));
     this._el_12 = this.renderer.createElement((null as any),'form',(null as any));
     this._NgForm_12_3 = new import18.NgForm((null as any),(null as any));
@@ -240,7 +240,7 @@ class _View_SettingPage0 extends import1.AppView<import3.SettingPage> {
     this._query_Label_14_0 = new import21.QueryList<any>();
     this._query_Button_14_1 = new import21.QueryList<any>();
     this._query_Icon_14_2 = new import21.QueryList<any>();
-    this._appEl_14.initComponent(this._Item_14_4,([] as any[]),compView_14);
+    this._appEl_14.initComponent(this._Item_14_4,[],compView_14);
     this._text_15 = this.renderer.createText((null as any),'\n			',(null as any));
     this._el_16 = this.renderer.createElement((null as any),'ion-label',(null as any));
     this.renderer.setElementAttribute(this._el_16,'floating','');
@@ -256,22 +256,22 @@ class _View_SettingPage0 extends import1.AppView<import3.SettingPage> {
     this._NgControl_19_5 = this._NgModel_19_4;
     this._NgControlStatus_19_6 = new import19.NgControlStatus(this._NgControl_19_5);
     this._TextInput_19_7 = new import24.TextInput(this.parentInjector.get(import26.Config),this.parentInjector.get(import37.Form),this._Item_14_4,this.parentInjector.get(import30.App),this.parentInjector.get(import9.Platform),new import27.ElementRef(this._el_19),this.renderer,this._Content_10_4,this.parentInjector.get(import8.NavController,(null as any)),this._NgControl_19_5);
-    this._appEl_19.initComponent(this._TextInput_19_7,([] as any[]),compView_19);
-    compView_19.create(this._TextInput_19_7,([] as any[]),(null as any));
+    this._appEl_19.initComponent(this._TextInput_19_7,[],compView_19);
+    compView_19.create(this._TextInput_19_7,[],(null as any));
     this._text_20 = this.renderer.createText((null as any),'\n		',(null as any));
     this._query_Label_14_0.reset([this._Label_16_3]);
     this._Item_14_4.contentLabel = this._query_Label_14_0.first;
     compView_14.create(this._Item_14_4,[
-      ([] as any[]),
-      ([] as any[]).concat([this._el_16]),
-      ([] as any[]).concat([
+      [],
+      [].concat([this._el_16]),
+      [].concat([
         this._text_15,
         this._text_18,
         this._text_20
       ]
       ),
-      ([] as any[]).concat([this._el_19]),
-      ([] as any[])
+      [].concat([this._el_19]),
+      []
     ]
     ,(null as any));
     this._text_21 = this.renderer.createText(this._el_12,'\n		',(null as any));
@@ -285,7 +285,7 @@ class _View_SettingPage0 extends import1.AppView<import3.SettingPage> {
     this._query_Label_22_0 = new import21.QueryList<any>();
     this._query_Button_22_1 = new import21.QueryList<any>();
     this._query_Icon_22_2 = new import21.QueryList<any>();
-    this._appEl_22.initComponent(this._Item_22_4,([] as any[]),compView_22);
+    this._appEl_22.initComponent(this._Item_22_4,[],compView_22);
     this._text_23 = this.renderer.createText((null as any),'\n			',(null as any));
     this._el_24 = this.renderer.createElement((null as any),'ion-label',(null as any));
     this.renderer.setElementAttribute(this._el_24,'floating','');
@@ -301,22 +301,22 @@ class _View_SettingPage0 extends import1.AppView<import3.SettingPage> {
     this._NgControl_27_5 = this._NgModel_27_4;
     this._NgControlStatus_27_6 = new import19.NgControlStatus(this._NgControl_27_5);
     this._TextInput_27_7 = new import24.TextInput(this.parentInjector.get(import26.Config),this.parentInjector.get(import37.Form),this._Item_22_4,this.parentInjector.get(import30.App),this.parentInjector.get(import9.Platform),new import27.ElementRef(this._el_27),this.renderer,this._Content_10_4,this.parentInjector.get(import8.NavController,(null as any)),this._NgControl_27_5);
-    this._appEl_27.initComponent(this._TextInput_27_7,([] as any[]),compView_27);
-    compView_27.create(this._TextInput_27_7,([] as any[]),(null as any));
+    this._appEl_27.initComponent(this._TextInput_27_7,[],compView_27);
+    compView_27.create(this._TextInput_27_7,[],(null as any));
     this._text_28 = this.renderer.createText((null as any),'\n		',(null as any));
     this._query_Label_22_0.reset([this._Label_24_3]);
     this._Item_22_4.contentLabel = this._query_Label_22_0.first;
     compView_22.create(this._Item_22_4,[
-      ([] as any[]),
-      ([] as any[]).concat([this._el_24]),
-      ([] as any[]).concat([
+      [],
+      [].concat([this._el_24]),
+      [].concat([
         this._text_23,
         this._text_26,
         this._text_28
       ]
       ),
-      ([] as any[]).concat([this._el_27]),
-      ([] as any[])
+      [].concat([this._el_27]),
+      []
     ]
     ,(null as any));
     this._text_29 = this.renderer.createText(this._el_12,'\n		',(null as any));
@@ -326,20 +326,20 @@ class _View_SettingPage0 extends import1.AppView<import3.SettingPage> {
     this._appEl_30 = new import2.AppElement(30,12,this,this._el_30);
     var compView_30:any = import39.viewFactory_Button0(this.viewUtils,this.injector(30),this._appEl_30);
     this._Button_30_4 = new import25.Button((null as any),'',this.parentInjector.get(import26.Config),new import27.ElementRef(this._el_30),this.renderer);
-    this._appEl_30.initComponent(this._Button_30_4,([] as any[]),compView_30);
+    this._appEl_30.initComponent(this._Button_30_4,[],compView_30);
     this._text_31 = this.renderer.createText((null as any),'Save Configuration',(null as any));
-    compView_30.create(this._Button_30_4,[([] as any[]).concat([this._text_31])],(null as any));
+    compView_30.create(this._Button_30_4,[[].concat([this._text_31])],(null as any));
     this._text_32 = this.renderer.createText(this._el_12,'\n	',(null as any));
     this._text_33 = this.renderer.createText((null as any),'\n',(null as any));
     compView_10.create(this._Content_10_4,[
-      ([] as any[]),
-      ([] as any[]).concat([
+      [],
+      [].concat([
         this._text_11,
         this._el_12,
         this._text_33
       ]
       ),
-      ([] as any[])
+      []
     ]
     ,(null as any));
     this._expr_0 = import7.UNINITIALIZED;
@@ -381,7 +381,7 @@ class _View_SettingPage0 extends import1.AppView<import3.SettingPage> {
     this._expr_33 = import7.UNINITIALIZED;
     this._expr_34 = import7.UNINITIALIZED;
     this._expr_35 = import7.UNINITIALIZED;
-    this.init(([] as any[]),[
+    this.init([],[
       this._text_0,
       this._el_1,
       this._text_2,
@@ -537,22 +537,22 @@ class _View_SettingPage0 extends import1.AppView<import3.SettingPage> {
     this.detectContentChildrenChanges(throwOnChange);
     if (!throwOnChange) {
       if (this._query_Button_14_1.dirty) {
-        this._query_Button_14_1.reset(([] as any[]));
+        this._query_Button_14_1.reset([]);
         this._Item_14_4._buttons = this._query_Button_14_1;
         this._query_Button_14_1.notifyOnChanges();
       }
       if (this._query_Icon_14_2.dirty) {
-        this._query_Icon_14_2.reset(([] as any[]));
+        this._query_Icon_14_2.reset([]);
         this._Item_14_4._icons = this._query_Icon_14_2;
         this._query_Icon_14_2.notifyOnChanges();
       }
       if (this._query_Button_22_1.dirty) {
-        this._query_Button_22_1.reset(([] as any[]));
+        this._query_Button_22_1.reset([]);
         this._Item_22_4._buttons = this._query_Button_22_1;
         this._query_Button_22_1.notifyOnChanges();
       }
       if (this._query_Icon_22_2.dirty) {
-        this._query_Icon_22_2.reset(([] as any[]));
+        this._query_Icon_22_2.reset([]);
         this._Item_22_4._icons = this._query_Icon_22_2;
         this._query_Icon_22_2.notifyOnChanges();
       }
@@ -684,7 +684,7 @@ class _View_SettingPage0 extends import1.AppView<import3.SettingPage> {
   }
   private _handle_submit_12_1($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0:any = ((<any>this._NgForm_12_3.onSubmit($event)) !== false);
+    const pd_0:any = ((<any>this._NgForm_12_3.onSubmit()) !== false);
     return (true && pd_0);
   }
   private _handle_reset_12_2($event:any):boolean {
@@ -704,6 +704,6 @@ class _View_SettingPage0 extends import1.AppView<import3.SettingPage> {
   }
 }
 export function viewFactory_SettingPage0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement):import1.AppView<import3.SettingPage> {
-  if ((renderType_SettingPage === (null as any))) { (renderType_SettingPage = viewUtils.createRenderComponentType('',0,import12.ViewEncapsulation.None,styles_SettingPage,{})); }
+  if ((renderType_SettingPage === (null as any))) { (renderType_SettingPage = viewUtils.createRenderComponentType('/Users/sivasakthisoftwares/Desktop/Android/ionicdashboard/.tmp/pages/setting/setting.html',0,import12.ViewEncapsulation.None,styles_SettingPage,{})); }
   return new _View_SettingPage0(viewUtils,parentInjector,declarationEl);
 }

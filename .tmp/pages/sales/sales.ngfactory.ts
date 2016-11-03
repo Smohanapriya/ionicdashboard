@@ -55,9 +55,9 @@ class _View_SalesPage_Host0 extends import1.AppView<any> {
     this._appEl_0 = new import2.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_SalesPage0(this.viewUtils,this.injector(0),this._appEl_0);
     this._SalesPage_0_4 = new import3.SalesPage(this.parentInjector.get(import8.AllSalesService),this.parentInjector.get(import9.LoadingController),this.parentInjector.get(import10.NavController),this.parentInjector.get(import11.NavParams));
-    this._appEl_0.initComponent(this._SalesPage_0_4,([] as any[]),compView_0);
+    this._appEl_0.initComponent(this._SalesPage_0_4,[],compView_0);
     compView_0.create(this._SalesPage_0_4,this.projectableNodes,(null as any));
-    this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
+    this.init([].concat([this._el_0]),[this._el_0],[],[]);
     return this._appEl_0;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
@@ -66,11 +66,11 @@ class _View_SalesPage_Host0 extends import1.AppView<any> {
   }
 }
 function viewFactory_SalesPage_Host0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement):import1.AppView<any> {
-  if ((renderType_SalesPage_Host === (null as any))) { (renderType_SalesPage_Host = viewUtils.createRenderComponentType('',0,import12.ViewEncapsulation.None,([] as any[]),{})); }
+  if ((renderType_SalesPage_Host === (null as any))) { (renderType_SalesPage_Host = viewUtils.createRenderComponentType('',0,import12.ViewEncapsulation.None,[],{})); }
   return new _View_SalesPage_Host0(viewUtils,parentInjector,declarationEl);
 }
 export const SalesPageNgFactory:import13.ComponentFactory<import3.SalesPage> = new import13.ComponentFactory<import3.SalesPage>('page-sales',viewFactory_SalesPage_Host0,import3.SalesPage);
-const styles_SalesPage:any[] = ([] as any[]);
+const styles_SalesPage:any[] = [];
 var renderType_SalesPage:import0.RenderComponentType = (null as any);
 class _View_SalesPage0 extends import1.AppView<import3.SalesPage> {
   _text_0:any;
@@ -134,15 +134,15 @@ class _View_SalesPage0 extends import1.AppView<import3.SalesPage> {
     this._appEl_3 = new import2.AppElement(3,1,this,this._el_3);
     var compView_3:any = import26.viewFactory_Navbar0(this.viewUtils,this.injector(3),this._appEl_3);
     this._Navbar_3_4 = new import15.Navbar(this.parentInjector.get(import27.App),this.parentInjector.get(import25.ViewController,(null as any)),this.parentInjector.get(import10.NavController,(null as any)),this.parentInjector.get(import23.Config),new import24.ElementRef(this._el_3),this.renderer);
-    this._appEl_3.initComponent(this._Navbar_3_4,([] as any[]),compView_3);
+    this._appEl_3.initComponent(this._Navbar_3_4,[],compView_3);
     this._text_4 = this.renderer.createText((null as any),'\n    ',(null as any));
     this._el_5 = this.renderer.createElement((null as any),'ion-title',(null as any));
     this._appEl_5 = new import2.AppElement(5,3,this,this._el_5);
     var compView_5:any = import28.viewFactory_ToolbarTitle0(this.viewUtils,this.injector(5),this._appEl_5);
     this._ToolbarTitle_5_4 = new import16.ToolbarTitle(this.parentInjector.get(import23.Config),new import24.ElementRef(this._el_5),this.renderer,this.parentInjector.get(import14.Toolbar,(null as any)),this._Navbar_3_4);
-    this._appEl_5.initComponent(this._ToolbarTitle_5_4,([] as any[]),compView_5);
+    this._appEl_5.initComponent(this._ToolbarTitle_5_4,[],compView_5);
     this._text_6 = this.renderer.createText((null as any),'Sales',(null as any));
-    compView_5.create(this._ToolbarTitle_5_4,[([] as any[]).concat([this._text_6])],(null as any));
+    compView_5.create(this._ToolbarTitle_5_4,[[].concat([this._text_6])],(null as any));
     this._text_7 = this.renderer.createText((null as any),'\n    ',(null as any));
     this._el_8 = this.renderer.createElement((null as any),'ion-buttons',(null as any));
     this.renderer.setElementAttribute(this._el_8,'end','');
@@ -155,14 +155,14 @@ class _View_SalesPage0 extends import1.AppView<import3.SalesPage> {
     this._appEl_10 = new import2.AppElement(10,8,this,this._el_10);
     var compView_10:any = import29.viewFactory_Button0(this.viewUtils,this.injector(10),this._appEl_10);
     this._Button_10_4 = new import19.Button((null as any),'',this.parentInjector.get(import23.Config),new import24.ElementRef(this._el_10),this.renderer);
-    this._appEl_10.initComponent(this._Button_10_4,([] as any[]),compView_10);
+    this._appEl_10.initComponent(this._Button_10_4,[],compView_10);
     this._text_11 = this.renderer.createText((null as any),'\n          ',(null as any));
     this._el_12 = this.renderer.createElement((null as any),'ion-icon',(null as any));
     this.renderer.setElementAttribute(this._el_12,'name','pie');
     this.renderer.setElementAttribute(this._el_12,'role','img');
     this._Icon_12_3 = new import20.Icon(this.parentInjector.get(import23.Config),new import24.ElementRef(this._el_12),this.renderer);
     this._text_13 = this.renderer.createText((null as any),'\n        ',(null as any));
-      compView_10.create(this._Button_10_4,[([] as any[]).concat([
+      compView_10.create(this._Button_10_4,[[].concat([
         this._text_11,
         this._el_12,
         this._text_13
@@ -171,10 +171,10 @@ class _View_SalesPage0 extends import1.AppView<import3.SalesPage> {
     this._text_14 = this.renderer.createText(this._el_8,'\n      ',(null as any));
     this._text_15 = this.renderer.createText((null as any),'\n  ',(null as any));
     compView_3.create(this._Navbar_3_4,[
-      ([] as any[]),
-      ([] as any[]),
-      ([] as any[]).concat([this._el_8]),
-      ([] as any[]).concat([
+      [],
+      [],
+      [].concat([this._el_8]),
+      [].concat([
         this._text_4,
         this._el_5,
         this._text_7,
@@ -191,7 +191,7 @@ class _View_SalesPage0 extends import1.AppView<import3.SalesPage> {
     this._appEl_18 = new import2.AppElement(18,(null as any),this,this._el_18);
     var compView_18:any = import30.viewFactory_Content0(this.viewUtils,this.injector(18),this._appEl_18);
     this._Content_18_4 = new import21.Content(this.parentInjector.get(import23.Config),new import24.ElementRef(this._el_18),this.renderer,this.parentInjector.get(import27.App),this.parentInjector.get(import31.Keyboard),this.parentInjector.get(import32.NgZone),this.parentInjector.get(import25.ViewController,(null as any)),this.parentInjector.get(import33.Tabs,(null as any)));
-    this._appEl_18.initComponent(this._Content_18_4,([] as any[]),compView_18);
+    this._appEl_18.initComponent(this._Content_18_4,[],compView_18);
     this._text_19 = this.renderer.createText((null as any),'\n',(null as any));
     this._anchor_20 = this.renderer.createTemplateAnchor((null as any),(null as any));
     this._appEl_20 = new import2.AppElement(20,18,this,this._anchor_20);
@@ -199,14 +199,14 @@ class _View_SalesPage0 extends import1.AppView<import3.SalesPage> {
     this._NgFor_20_6 = new import22.NgFor(this._appEl_20.vcRef,this._TemplateRef_20_5,this.parentInjector.get(import35.IterableDiffers),this.ref);
     this._text_21 = this.renderer.createText((null as any),'\n',(null as any));
     compView_18.create(this._Content_18_4,[
-      ([] as any[]),
-      ([] as any[]).concat([
+      [],
+      [].concat([
         this._text_19,
         this._appEl_20,
         this._text_21
       ]
       ),
-      ([] as any[])
+      []
     ]
     ,(null as any));
     this._text_22 = this.renderer.createText(parentRenderNode,'\n  \n',(null as any));
@@ -219,7 +219,7 @@ class _View_SalesPage0 extends import1.AppView<import3.SalesPage> {
     this._expr_6 = import7.UNINITIALIZED;
     this._expr_7 = import7.UNINITIALIZED;
     this._expr_8 = import7.UNINITIALIZED;
-    this.init(([] as any[]),[
+    this.init([],[
       this._text_0,
       this._el_1,
       this._text_2,
@@ -244,7 +244,7 @@ class _View_SalesPage0 extends import1.AppView<import3.SalesPage> {
       this._text_21,
       this._text_22
     ]
-    ,[disposable_0],([] as any[]));
+    ,[disposable_0],[]);
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
@@ -334,7 +334,7 @@ class _View_SalesPage0 extends import1.AppView<import3.SalesPage> {
   }
 }
 export function viewFactory_SalesPage0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement):import1.AppView<import3.SalesPage> {
-  if ((renderType_SalesPage === (null as any))) { (renderType_SalesPage = viewUtils.createRenderComponentType('',0,import12.ViewEncapsulation.None,styles_SalesPage,{})); }
+  if ((renderType_SalesPage === (null as any))) { (renderType_SalesPage = viewUtils.createRenderComponentType('/Users/sivasakthisoftwares/Desktop/Android/ionicdashboard/.tmp/pages/sales/sales.html',0,import12.ViewEncapsulation.None,styles_SalesPage,{})); }
   return new _View_SalesPage0(viewUtils,parentInjector,declarationEl);
 }
 class _View_SalesPage1 extends import1.AppView<any> {
@@ -535,7 +535,7 @@ class _View_SalesPage1 extends import1.AppView<any> {
     this._expr_11 = import7.UNINITIALIZED;
     this._expr_12 = import7.UNINITIALIZED;
     this._expr_13 = import7.UNINITIALIZED;
-    this.init(([] as any[]).concat([this._el_0]),[
+    this.init([].concat([this._el_0]),[
       this._el_0,
       this._text_1,
       this._el_2,
@@ -597,7 +597,7 @@ class _View_SalesPage1 extends import1.AppView<any> {
       this._text_58,
       this._text_59
     ]
-    ,([] as any[]),([] as any[]));
+    ,[],[]);
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {

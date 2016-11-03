@@ -107,6 +107,7 @@ import * as import99 from '@angular/core/src/change_detection/differs/keyvalue_d
 import * as import100 from '@angular/http/src/interfaces';
 import * as import101 from '@angular/http/src/http';
 import * as import102 from 'ionic-angular/components/app/app-root';
+import * as import103 from '@angular/core/src/i18n/tokens';
 class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
   _CommonModule_0:import2.CommonModule;
   _ApplicationModule_1:import3.ApplicationModule;
@@ -192,6 +193,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
   __PurchaseService_81:import51.PurchaseService;
   __StaffService_82:import52.StaffService;
   __StocksService_83:import53.StocksService;
+  __TRANSLATIONS_FORMAT_84:any;
   constructor(parent:import54.Injector) {
     super(parent,[
       import55.ActionSheetCmpNgFactory,
@@ -219,7 +221,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     ,[import57.IonicAppNgFactory]);
   }
   get _LOCALE_ID_10():any {
-    if ((this.__LOCALE_ID_10 == (null as any))) { (this.__LOCALE_ID_10 = 'en-US'); }
+    if ((this.__LOCALE_ID_10 == (null as any))) { (this.__LOCALE_ID_10 = (null as any)); }
     return this.__LOCALE_ID_10;
   }
   get _NgLocalization_11():import10.NgLocaleLocalization {
@@ -455,6 +457,10 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((this.__StocksService_83 == (null as any))) { (this.__StocksService_83 = new import53.StocksService(this._Http_51,this._ConnectionService_76)); }
     return this.__StocksService_83;
   }
+  get _TRANSLATIONS_FORMAT_84():any {
+    if ((this.__TRANSLATIONS_FORMAT_84 == (null as any))) { (this.__TRANSLATIONS_FORMAT_84 = (null as any)); }
+    return this.__TRANSLATIONS_FORMAT_84;
+  }
   createInternal():import1.AppModule {
     this._CommonModule_0 = new import2.CommonModule();
     this._ApplicationModule_1 = new import3.ApplicationModule();
@@ -575,6 +581,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     if ((token === import51.PurchaseService)) { return this._PurchaseService_81; }
     if ((token === import52.StaffService)) { return this._StaffService_82; }
     if ((token === import53.StocksService)) { return this._StocksService_83; }
+    if ((token === import103.TRANSLATIONS_FORMAT)) { return this._TRANSLATIONS_FORMAT_84; }
     return notFoundResult;
   }
   destroyInternal():void {

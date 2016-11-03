@@ -235,7 +235,7 @@ var _View_PurchasePage0 = (function (_super) {
 }(import1.AppView));
 export function viewFactory_PurchasePage0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_PurchasePage === null)) {
-        (renderType_PurchasePage = viewUtils.createRenderComponentType('', 0, import11.ViewEncapsulation.None, styles_PurchasePage, {}));
+        (renderType_PurchasePage = viewUtils.createRenderComponentType('/Users/sivasakthisoftwares/Desktop/Android/ionicdashboard/.tmp/pages/purchase/purchase.html', 0, import11.ViewEncapsulation.None, styles_PurchasePage, {}));
     }
     return new _View_PurchasePage0(viewUtils, parentInjector, declarationEl);
 }

@@ -238,7 +238,7 @@ var _View_SalesGraph0 = (function (_super) {
 }(import1.AppView));
 export function viewFactory_SalesGraph0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_SalesGraph === null)) {
-        (renderType_SalesGraph = viewUtils.createRenderComponentType('', 0, import12.ViewEncapsulation.None, styles_SalesGraph, {}));
+        (renderType_SalesGraph = viewUtils.createRenderComponentType('/Users/sivasakthisoftwares/Desktop/Android/ionicdashboard/.tmp/pages/sales-graph/sales-graph.html', 0, import12.ViewEncapsulation.None, styles_SalesGraph, {}));
     }
     return new _View_SalesGraph0(viewUtils, parentInjector, declarationEl);
 }

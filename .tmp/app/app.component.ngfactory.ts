@@ -41,9 +41,9 @@ class _View_MyApp_Host0 extends import1.AppView<any> {
     this._appEl_0 = new import2.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_MyApp0(this.viewUtils,this.injector(0),this._appEl_0);
     this._MyApp_0_4 = new import3.MyApp(this.parentInjector.get(import8.Platform));
-    this._appEl_0.initComponent(this._MyApp_0_4,([] as any[]),compView_0);
+    this._appEl_0.initComponent(this._MyApp_0_4,[],compView_0);
     compView_0.create(this._MyApp_0_4,this.projectableNodes,(null as any));
-    this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
+    this.init([].concat([this._el_0]),[this._el_0],[],[]);
     return this._appEl_0;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
@@ -52,11 +52,11 @@ class _View_MyApp_Host0 extends import1.AppView<any> {
   }
 }
 function viewFactory_MyApp_Host0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement):import1.AppView<any> {
-  if ((renderType_MyApp_Host === (null as any))) { (renderType_MyApp_Host = viewUtils.createRenderComponentType('',0,import9.ViewEncapsulation.None,([] as any[]),{})); }
+  if ((renderType_MyApp_Host === (null as any))) { (renderType_MyApp_Host = viewUtils.createRenderComponentType('',0,import9.ViewEncapsulation.None,[],{})); }
   return new _View_MyApp_Host0(viewUtils,parentInjector,declarationEl);
 }
 export const MyAppNgFactory:import10.ComponentFactory<import3.MyApp> = new import10.ComponentFactory<import3.MyApp>('ng-component',viewFactory_MyApp_Host0,import3.MyApp);
-const styles_MyApp:any[] = ([] as any[]);
+const styles_MyApp:any[] = [];
 var renderType_MyApp:import0.RenderComponentType = (null as any);
 class _View_MyApp0 extends import1.AppView<import3.MyApp> {
   _el_0:any;
@@ -72,10 +72,10 @@ class _View_MyApp0 extends import1.AppView<import3.MyApp> {
     this._appEl_0 = new import2.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = import12.viewFactory_Nav0(this.viewUtils,this.injector(0),this._appEl_0);
     this._Nav_0_4 = new import11.Nav(this.parentInjector.get(import13.ViewController,(null as any)),this.parentInjector.get(import14.NavControllerBase,(null as any)),this.parentInjector.get(import15.App),this.parentInjector.get(import16.Config),this.parentInjector.get(import17.Keyboard),new import18.ElementRef(this._el_0),this.parentInjector.get(import19.NgZone),this.renderer,this.parentInjector.get(import20.ComponentFactoryResolver),this.parentInjector.get(import21.GestureController),this.parentInjector.get(import22.TransitionController),this.parentInjector.get(import23.DeepLinker,(null as any)));
-    this._appEl_0.initComponent(this._Nav_0_4,([] as any[]),compView_0);
-    compView_0.create(this._Nav_0_4,([] as any[]),(null as any));
+    this._appEl_0.initComponent(this._Nav_0_4,[],compView_0);
+    compView_0.create(this._Nav_0_4,[],(null as any));
     this._expr_0 = import7.UNINITIALIZED;
-    this.init(([] as any[]),[this._el_0],([] as any[]),([] as any[]));
+    this.init([],[this._el_0],[],[]);
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
@@ -94,6 +94,6 @@ class _View_MyApp0 extends import1.AppView<import3.MyApp> {
   }
 }
 export function viewFactory_MyApp0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement):import1.AppView<import3.MyApp> {
-  if ((renderType_MyApp === (null as any))) { (renderType_MyApp = viewUtils.createRenderComponentType('',0,import9.ViewEncapsulation.None,styles_MyApp,{})); }
+  if ((renderType_MyApp === (null as any))) { (renderType_MyApp = viewUtils.createRenderComponentType('/Users/sivasakthisoftwares/Desktop/Android/ionicdashboard/.tmp/app/app.component.ts class MyApp - inline template',0,import9.ViewEncapsulation.None,styles_MyApp,{})); }
   return new _View_MyApp0(viewUtils,parentInjector,declarationEl);
 }

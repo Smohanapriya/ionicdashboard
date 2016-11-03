@@ -656,7 +656,7 @@ var _View_SettingPage0 = (function (_super) {
     };
     _View_SettingPage0.prototype._handle_submit_12_1 = function ($event) {
         this.markPathToRootAsCheckOnce();
-        var pd_0 = (this._NgForm_12_3.onSubmit($event) !== false);
+        var pd_0 = (this._NgForm_12_3.onSubmit() !== false);
         return (true && pd_0);
     };
     _View_SettingPage0.prototype._handle_reset_12_2 = function ($event) {
@@ -678,7 +678,7 @@ var _View_SettingPage0 = (function (_super) {
 }(import1.AppView));
 export function viewFactory_SettingPage0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_SettingPage === null)) {
-        (renderType_SettingPage = viewUtils.createRenderComponentType('', 0, import12.ViewEncapsulation.None, styles_SettingPage, {}));
+        (renderType_SettingPage = viewUtils.createRenderComponentType('/Users/sivasakthisoftwares/Desktop/Android/ionicdashboard/.tmp/pages/setting/setting.html', 0, import12.ViewEncapsulation.None, styles_SettingPage, {}));
     }
     return new _View_SettingPage0(viewUtils, parentInjector, declarationEl);
 }

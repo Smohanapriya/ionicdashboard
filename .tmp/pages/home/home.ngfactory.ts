@@ -48,9 +48,9 @@ class _View_HomePage_Host0 extends import1.AppView<any> {
     this._appEl_0 = new import2.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_HomePage0(this.viewUtils,this.injector(0),this._appEl_0);
     this._HomePage_0_4 = new import3.HomePage(this.parentInjector.get(import8.NavController),this.parentInjector.get(import9.Platform),this.parentInjector.get(import10.ConnectionService));
-    this._appEl_0.initComponent(this._HomePage_0_4,([] as any[]),compView_0);
+    this._appEl_0.initComponent(this._HomePage_0_4,[],compView_0);
     compView_0.create(this._HomePage_0_4,this.projectableNodes,(null as any));
-    this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
+    this.init([].concat([this._el_0]),[this._el_0],[],[]);
     return this._appEl_0;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
@@ -59,11 +59,11 @@ class _View_HomePage_Host0 extends import1.AppView<any> {
   }
 }
 function viewFactory_HomePage_Host0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement):import1.AppView<any> {
-  if ((renderType_HomePage_Host === (null as any))) { (renderType_HomePage_Host = viewUtils.createRenderComponentType('',0,import11.ViewEncapsulation.None,([] as any[]),{})); }
+  if ((renderType_HomePage_Host === (null as any))) { (renderType_HomePage_Host = viewUtils.createRenderComponentType('',0,import11.ViewEncapsulation.None,[],{})); }
   return new _View_HomePage_Host0(viewUtils,parentInjector,declarationEl);
 }
 export const HomePageNgFactory:import12.ComponentFactory<import3.HomePage> = new import12.ComponentFactory<import3.HomePage>('page-home',viewFactory_HomePage_Host0,import3.HomePage);
-const styles_HomePage:any[] = ([] as any[]);
+const styles_HomePage:any[] = [];
 var renderType_HomePage:import0.RenderComponentType = (null as any);
 class _View_HomePage0 extends import1.AppView<import3.HomePage> {
   _el_0:any;
@@ -268,7 +268,7 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._appEl_2 = new import2.AppElement(2,0,this,this._el_2);
     var compView_2:any = import24.viewFactory_Navbar0(this.viewUtils,this.injector(2),this._appEl_2);
     this._Navbar_2_4 = new import14.Navbar(this.parentInjector.get(import25.App),this.parentInjector.get(import23.ViewController,(null as any)),this.parentInjector.get(import8.NavController,(null as any)),this.parentInjector.get(import21.Config),new import22.ElementRef(this._el_2),this.renderer);
-    this._appEl_2.initComponent(this._Navbar_2_4,([] as any[]),compView_2);
+    this._appEl_2.initComponent(this._Navbar_2_4,[],compView_2);
     this._text_3 = this.renderer.createText((null as any),'\n		',(null as any));
     this._el_4 = this.renderer.createElement((null as any),'ion-buttons',(null as any));
     this.renderer.setElementAttribute(this._el_4,'end','');
@@ -281,14 +281,14 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._appEl_6 = new import2.AppElement(6,4,this,this._el_6);
     var compView_6:any = import26.viewFactory_Button0(this.viewUtils,this.injector(6),this._appEl_6);
     this._Button_6_4 = new import17.Button((null as any),'',this.parentInjector.get(import21.Config),new import22.ElementRef(this._el_6),this.renderer);
-    this._appEl_6.initComponent(this._Button_6_4,([] as any[]),compView_6);
+    this._appEl_6.initComponent(this._Button_6_4,[],compView_6);
     this._text_7 = this.renderer.createText((null as any),'\n          ',(null as any));
     this._el_8 = this.renderer.createElement((null as any),'ion-icon',(null as any));
     this.renderer.setElementAttribute(this._el_8,'name','settings');
     this.renderer.setElementAttribute(this._el_8,'role','img');
     this._Icon_8_3 = new import18.Icon(this.parentInjector.get(import21.Config),new import22.ElementRef(this._el_8),this.renderer);
     this._text_9 = this.renderer.createText((null as any),'\n        ',(null as any));
-      compView_6.create(this._Button_6_4,[([] as any[]).concat([
+      compView_6.create(this._Button_6_4,[[].concat([
         this._text_7,
         this._el_8,
         this._text_9
@@ -297,10 +297,10 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._text_10 = this.renderer.createText(this._el_4,'\n		',(null as any));
     this._text_11 = this.renderer.createText((null as any),'\n	',(null as any));
     compView_2.create(this._Navbar_2_4,[
-      ([] as any[]),
-      ([] as any[]),
-      ([] as any[]).concat([this._el_4]),
-      ([] as any[]).concat([
+      [],
+      [],
+      [].concat([this._el_4]),
+      [].concat([
         this._text_3,
         this._text_11
       ]
@@ -315,7 +315,7 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._appEl_14 = new import2.AppElement(14,(null as any),this,this._el_14);
     var compView_14:any = import27.viewFactory_Content0(this.viewUtils,this.injector(14),this._appEl_14);
     this._Content_14_4 = new import19.Content(this.parentInjector.get(import21.Config),new import22.ElementRef(this._el_14),this.renderer,this.parentInjector.get(import25.App),this.parentInjector.get(import28.Keyboard),this.parentInjector.get(import29.NgZone),this.parentInjector.get(import23.ViewController,(null as any)),this.parentInjector.get(import30.Tabs,(null as any)));
-    this._appEl_14.initComponent(this._Content_14_4,([] as any[]),compView_14);
+    this._appEl_14.initComponent(this._Content_14_4,[],compView_14);
     this._text_15 = this.renderer.createText((null as any),'\n	',(null as any));
     this._el_16 = this.renderer.createElement((null as any),'ion-grid',(null as any));
     this._Grid_16_3 = new import20.Grid();
@@ -363,7 +363,7 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._appEl_40 = new import2.AppElement(40,38,this,this._el_40);
     var compView_40:any = import26.viewFactory_Button0(this.viewUtils,this.injector(40),this._appEl_40);
     this._Button_40_4 = new import17.Button((null as any),'',this.parentInjector.get(import21.Config),new import22.ElementRef(this._el_40),this.renderer);
-    this._appEl_40.initComponent(this._Button_40_4,([] as any[]),compView_40);
+    this._appEl_40.initComponent(this._Button_40_4,[],compView_40);
     this._text_41 = this.renderer.createText((null as any),'\n            ',(null as any));
     this._el_42 = this.renderer.createElement((null as any),'ion-grid',(null as any));
     this._Grid_42_3 = new import20.Grid();
@@ -387,7 +387,7 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._text_53 = this.renderer.createText(this._el_49,'\n              ',(null as any));
     this._text_54 = this.renderer.createText(this._el_42,'\n            ',(null as any));
     this._text_55 = this.renderer.createText((null as any),'\n          ',(null as any));
-      compView_40.create(this._Button_40_4,[([] as any[]).concat([
+      compView_40.create(this._Button_40_4,[[].concat([
         this._text_41,
         this._el_42,
         this._text_55
@@ -407,7 +407,7 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._appEl_60 = new import2.AppElement(60,58,this,this._el_60);
     var compView_60:any = import26.viewFactory_Button0(this.viewUtils,this.injector(60),this._appEl_60);
     this._Button_60_4 = new import17.Button((null as any),'',this.parentInjector.get(import21.Config),new import22.ElementRef(this._el_60),this.renderer);
-    this._appEl_60.initComponent(this._Button_60_4,([] as any[]),compView_60);
+    this._appEl_60.initComponent(this._Button_60_4,[],compView_60);
     this._text_61 = this.renderer.createText((null as any),'\n            ',(null as any));
     this._el_62 = this.renderer.createElement((null as any),'ion-grid',(null as any));
     this._Grid_62_3 = new import20.Grid();
@@ -431,7 +431,7 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._text_73 = this.renderer.createText(this._el_69,'\n              ',(null as any));
     this._text_74 = this.renderer.createText(this._el_62,'\n            ',(null as any));
     this._text_75 = this.renderer.createText((null as any),'\n          ',(null as any));
-      compView_60.create(this._Button_60_4,[([] as any[]).concat([
+      compView_60.create(this._Button_60_4,[[].concat([
         this._text_61,
         this._el_62,
         this._text_75
@@ -455,7 +455,7 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._appEl_83 = new import2.AppElement(83,81,this,this._el_83);
     var compView_83:any = import26.viewFactory_Button0(this.viewUtils,this.injector(83),this._appEl_83);
     this._Button_83_4 = new import17.Button((null as any),'',this.parentInjector.get(import21.Config),new import22.ElementRef(this._el_83),this.renderer);
-    this._appEl_83.initComponent(this._Button_83_4,([] as any[]),compView_83);
+    this._appEl_83.initComponent(this._Button_83_4,[],compView_83);
     this._text_84 = this.renderer.createText((null as any),'\n            ',(null as any));
     this._el_85 = this.renderer.createElement((null as any),'ion-grid',(null as any));
     this._Grid_85_3 = new import20.Grid();
@@ -479,7 +479,7 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._text_96 = this.renderer.createText(this._el_92,'\n              ',(null as any));
     this._text_97 = this.renderer.createText(this._el_85,'\n            ',(null as any));
     this._text_98 = this.renderer.createText((null as any),'\n          ',(null as any));
-      compView_83.create(this._Button_83_4,[([] as any[]).concat([
+      compView_83.create(this._Button_83_4,[[].concat([
         this._text_84,
         this._el_85,
         this._text_98
@@ -499,7 +499,7 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._appEl_103 = new import2.AppElement(103,101,this,this._el_103);
     var compView_103:any = import26.viewFactory_Button0(this.viewUtils,this.injector(103),this._appEl_103);
     this._Button_103_4 = new import17.Button((null as any),'',this.parentInjector.get(import21.Config),new import22.ElementRef(this._el_103),this.renderer);
-    this._appEl_103.initComponent(this._Button_103_4,([] as any[]),compView_103);
+    this._appEl_103.initComponent(this._Button_103_4,[],compView_103);
     this._text_104 = this.renderer.createText((null as any),'\n            ',(null as any));
     this._el_105 = this.renderer.createElement((null as any),'ion-grid',(null as any));
     this._Grid_105_3 = new import20.Grid();
@@ -523,7 +523,7 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._text_116 = this.renderer.createText(this._el_112,'\n              ',(null as any));
     this._text_117 = this.renderer.createText(this._el_105,'\n            ',(null as any));
     this._text_118 = this.renderer.createText((null as any),'\n          ',(null as any));
-      compView_103.create(this._Button_103_4,[([] as any[]).concat([
+      compView_103.create(this._Button_103_4,[[].concat([
         this._text_104,
         this._el_105,
         this._text_118
@@ -536,14 +536,14 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._text_123 = this.renderer.createText(this._el_16,'\n	',(null as any));
     this._text_124 = this.renderer.createText((null as any),'\n',(null as any));
     compView_14.create(this._Content_14_4,[
-      ([] as any[]),
-      ([] as any[]).concat([
+      [],
+      [].concat([
         this._text_15,
         this._el_16,
         this._text_124
       ]
       ),
-      ([] as any[])
+      []
     ]
     ,(null as any));
     this._expr_0 = import7.UNINITIALIZED;
@@ -570,7 +570,7 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
     this._expr_21 = import7.UNINITIALIZED;
     this._expr_22 = import7.UNINITIALIZED;
     this._expr_23 = import7.UNINITIALIZED;
-    this.init(([] as any[]),[
+    this.init([],[
       this._el_0,
       this._text_1,
       this._el_2,
@@ -704,7 +704,7 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
       disposable_3,
       disposable_4
     ]
-    ,([] as any[]));
+    ,[]);
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
@@ -910,6 +910,6 @@ class _View_HomePage0 extends import1.AppView<import3.HomePage> {
   }
 }
 export function viewFactory_HomePage0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import2.AppElement):import1.AppView<import3.HomePage> {
-  if ((renderType_HomePage === (null as any))) { (renderType_HomePage = viewUtils.createRenderComponentType('',0,import11.ViewEncapsulation.None,styles_HomePage,{})); }
+  if ((renderType_HomePage === (null as any))) { (renderType_HomePage = viewUtils.createRenderComponentType('/Users/sivasakthisoftwares/Desktop/Android/ionicdashboard/.tmp/pages/home/home.html',0,import11.ViewEncapsulation.None,styles_HomePage,{})); }
   return new _View_HomePage0(viewUtils,parentInjector,declarationEl);
 }

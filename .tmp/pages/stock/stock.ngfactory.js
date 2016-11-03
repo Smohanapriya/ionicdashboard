@@ -235,7 +235,7 @@ var _View_StockPage0 = (function (_super) {
 }(import1.AppView));
 export function viewFactory_StockPage0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_StockPage === null)) {
-        (renderType_StockPage = viewUtils.createRenderComponentType('', 0, import11.ViewEncapsulation.None, styles_StockPage, {}));
+        (renderType_StockPage = viewUtils.createRenderComponentType('/Users/sivasakthisoftwares/Desktop/Android/ionicdashboard/.tmp/pages/stock/stock.html', 0, import11.ViewEncapsulation.None, styles_StockPage, {}));
     }
     return new _View_StockPage0(viewUtils, parentInjector, declarationEl);
 }

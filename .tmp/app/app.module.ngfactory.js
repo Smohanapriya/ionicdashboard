@@ -110,6 +110,7 @@ import * as import99 from '@angular/core/src/change_detection/differs/keyvalue_d
 import * as import100 from '@angular/http/src/interfaces';
 import * as import101 from '@angular/http/src/http';
 import * as import102 from 'ionic-angular/components/app/app-root';
+import * as import103 from '@angular/core/src/i18n/tokens';
 var AppModuleInjector = (function (_super) {
     __extends(AppModuleInjector, _super);
     function AppModuleInjector(parent) {
@@ -140,7 +141,7 @@ var AppModuleInjector = (function (_super) {
     Object.defineProperty(AppModuleInjector.prototype, "_LOCALE_ID_10", {
         get: function () {
             if ((this.__LOCALE_ID_10 == null)) {
-                (this.__LOCALE_ID_10 = 'en-US');
+                (this.__LOCALE_ID_10 = null);
             }
             return this.__LOCALE_ID_10;
         },
@@ -721,6 +722,16 @@ var AppModuleInjector = (function (_super) {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(AppModuleInjector.prototype, "_TRANSLATIONS_FORMAT_84", {
+        get: function () {
+            if ((this.__TRANSLATIONS_FORMAT_84 == null)) {
+                (this.__TRANSLATIONS_FORMAT_84 = null);
+            }
+            return this.__TRANSLATIONS_FORMAT_84;
+        },
+        enumerable: true,
+        configurable: true
+    });
     AppModuleInjector.prototype.createInternal = function () {
         this._CommonModule_0 = new import2.CommonModule();
         this._ApplicationModule_1 = new import3.ApplicationModule();
@@ -1007,6 +1018,9 @@ var AppModuleInjector = (function (_super) {
         }
         if ((token === import53.StocksService)) {
             return this._StocksService_83;
+        }
+        if ((token === import103.TRANSLATIONS_FORMAT)) {
+            return this._TRANSLATIONS_FORMAT_84;
         }
         return notFoundResult;
     };

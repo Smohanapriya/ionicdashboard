@@ -235,7 +235,7 @@ var _View_StaffPage0 = (function (_super) {
 }(import1.AppView));
 export function viewFactory_StaffPage0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_StaffPage === null)) {
-        (renderType_StaffPage = viewUtils.createRenderComponentType('', 0, import11.ViewEncapsulation.None, styles_StaffPage, {}));
+        (renderType_StaffPage = viewUtils.createRenderComponentType('/Users/sivasakthisoftwares/Desktop/Android/ionicdashboard/.tmp/pages/staff/staff.html', 0, import11.ViewEncapsulation.None, styles_StaffPage, {}));
     }
     return new _View_StaffPage0(viewUtils, parentInjector, declarationEl);
 }
